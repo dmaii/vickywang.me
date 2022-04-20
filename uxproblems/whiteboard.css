@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Walter+Turncoat);
+
+:root {
+    /* Color */
+    --white: ##F5F5F5;
+    --black: #333333;
+    --grey: #b4b4b4;
+    --grey-lighter: #eeeeee;
+    --grey-darker: #7d7d7d;
+
+    /* Width */
+    --lg: 80rem;
+    --md: 50rem;
+    --sm: 30rem;
+}
+
+body {
+    color: var(--black);
+    font-family: "Walter Turncoat", cursive;
+}
+
+body ul {
+    list-style-position: inside;
+}
+li {
+    display: list-item;
+    margin-left: 24px;
+  }
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+/* font new */
+
+.display {
+    font-weight: 900;
+    font-size: 3em;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    margin: 0;
+    color: var(--black);
+}
+h4, h5, h6 {
+    font-weight: 100;
+    color: var(--grey-darker);
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.3em;
+}
+
+h5 {
+    font-size: 0.83em;
+}
+
+h6 {
+    font-size: 0.75em;
+}
+
+▲
+/* font new */
+
+/* accordion */
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+
+}
+
+.accordion {
+    background-color: var(--grey-lighter);
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 15px 20px;
+    color: var(--black-darker);
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+.accordion:after {
+    content: "";
+    background-image: url("/arrow-accordion-up.svg");
+    height: 36px;
+    width: 36px;
+    float: right;
+}
+
+.accordion.is-open:after {
+    content: "";
+    background-image: url("/arrow-accordion-down.svg");
+}
+
+.accordion:hover,
+.accordion.is-open {
+    background-color: var(--grey-lighter);
+}
+
+.accordion-content {
+    background-color: var(--white);
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+}
+
+
+/* accordion */
