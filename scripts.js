@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-  const showAnim = gsap.from('.main-tool-bar', {
+  const showAnim = gsap.from('.header', {
     yPercent: -100,
     paused: true,
     duration: 0.2
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       self.direction === -1 ? showAnim.play() : showAnim.reverse()
     }
   });
-  //main-tool-bar + 2 links on html
+  //header + 2 links on html
 
 
 
