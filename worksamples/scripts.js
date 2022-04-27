@@ -3,6 +3,33 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+  AOS.init({
+
+    delay: 180, // values from 0 to 3000, with step 50ms
+    duration: 1000, // values from 0 to 3000, with step 50ms
+    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+  });
+  //aos + 2 links on html 
+
+  function progressBarScroll() {
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
+        height = document.body.scrollHeight - document.body.clientHeight,
+        scrolled = (winScroll / height) * 100;
+    document.getElementById("progressBar").style.width = scrolled + "%";
+    console.log('height', height);
+    console.log('scrollHeight', document.documentElement.scrollHeight);
+    console.log('clientHeight', document.documentElement.clientHeight);
+
+  }
+  
+  window.onscroll = function () {
+    progressBarScroll();
+  };
+  //progressBarScroll
+
+
+
   const showAnim = gsap.from('.header', {
     yPercent: -100,
     paused: true,
@@ -17,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
   });
   //header + 2 links on html
-
 
 
 
@@ -44,7 +70,29 @@ document.addEventListener("DOMContentLoaded", function (event) {
   
 
 
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
 
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.addEventListener('scroll', function () {
+    scrollFunction()
+  })
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  mybutton.addEventListener('click', topFunction)
+  // back to top 
 
 
 
