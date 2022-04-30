@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   //do work
 
-
   function makeCarousel(carousel) {
     var carouselContent = carousel.querySelector('.carouselAbout-content');
     var slides = carousel.querySelectorAll('.slide');
@@ -180,6 +179,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     makeCarousel(carousels[index]);
     index++
   }
+  //vanilla js carousel
   //vanilla js carousel
 
   // For more information, see greensock.com/docs/v3/Plugins/ScrollTrigger

@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   //do work
 
+
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
   
@@ -15,8 +16,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       navMenu.classList.remove("active");
     })
   );
-    //Responsive hamburger menu
-
+  
   AOS.init({
 
     delay: 180, // values from 0 to 3000, with step 50ms
@@ -41,9 +41,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
     progressBarScroll();
   };
   //progressBarScroll
-
-
-
   const showAnim = gsap.from('.header', {
     yPercent: -100,
     paused: true,
@@ -59,6 +56,29 @@ document.addEventListener("DOMContentLoaded", function (event) {
   });
   //header + 2 links on html
 
+
+
+
+  const accordionBtns = document.querySelectorAll(".accordion");
+
+  accordionBtns.forEach((accordion) => {
+    accordion.onclick = function () {
+      this.classList.toggle("is-open");
+  
+      let content = this.nextElementSibling;
+      console.log(content);
+  
+      if (content.style.maxHeight) {
+        //this is if the accordion is open
+        content.style.maxHeight = null;
+      } else {
+        //if the accordion is currently closed
+        content.style.maxHeight = content.scrollHeight + "px";
+        console.log(content.style.maxHeight);
+      }
+    };
+  });
+  
 
 
   //Get the button
@@ -84,5 +104,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
   mybutton.addEventListener('click', topFunction)
   // back to top 
+
+
 
 });
