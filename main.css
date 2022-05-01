@@ -98,6 +98,7 @@ strong {
 .textItalic {
     font-style: italic;
 }
+
 /* text*/
 
 hr {
@@ -156,9 +157,112 @@ hr {
 }
 
 /* ---- must always have for responsive*/
+.element {
+    padding: 0.8em 1em 0;
+    margin-bottom: 1em;
+    transition: background-color 0.3s ease;
+}
+
+/* ---- password --------- */
+
+.password {
+    display: none;
+    padding: 0.8em 1em 0;
+    margin-bottom: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.password:hover {
+    display: block;
+    background: var(---testing-hover);
+}
+
+/* ---- password --------- */
+
+/* ---- hide/show --------- */
+
+
+/* relevant styles */
+.img__wrap {
+    position: relative;
+
+}
+
+.img__description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--grey-light);
+    visibility: hidden;
+    opacity: 0;
+
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ---- hide/show --------- */
+/* ---- password textbox --------- */
 
 
 
+.input-field {
+
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: 100%;
+    text-align: center;
+
+    font-size: 18px;
+    width: 350px;
+
+}
+input {
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    background: transparent;
+    border: 2px solid #cfd8dc;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: 4px 4px 0px #cfd8dc;
+}
+.input-field button {
+    width: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 13px;
+    cursor: pointer;
+    color: #fff;
+    animation: arrowani 0.5s linear infinite alternate;
+}
+
+
+#strength {
+    font-weight: 600;
+}
+
+@keyframes arrowani {
+    100% {
+        padding-left: 10px;
+   }
+}
+
+/* ---- password textbox --------- */
 
 .element:after {
     content: "";
@@ -621,8 +725,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px 20px;
-    height: 5em;
+    padding: 26px 16px;
     background: var(--white);
 
     border-radius: 3px;
