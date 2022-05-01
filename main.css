@@ -2,9 +2,7 @@
     /* Color */
     --black: #181818;
     /* title */
-    --grey: #858585;
-    --grey-text: #909090;
-
+    --grey: #909090;
     /* text */
     --grey-lightest: #f8f8f8;
     --grey-light: #efefef;
@@ -55,7 +53,7 @@ h3, h4 {
 h5, h6 {
     font-family: inherit;
     font-weight: 300;
-    color: var(--grey-text);
+    color: var(--grey);
     margin: 0.2em 0;
 }
 
@@ -194,7 +192,7 @@ hr {
     bottom: 0;
     left: 0;
     right: 0;
-    background: var(--grey-light);
+    background: rgba(255, 255, 255, 0.8);
     visibility: hidden;
     opacity: 0;
 
@@ -213,9 +211,8 @@ hr {
 
 
 .input-field {
-
     position: absolute;
-    top: 50%;
+    top: 43%;
     left: 30%;
     width: 100%;
     text-align: center;
@@ -228,13 +225,12 @@ input {
     width: 100%;
     height: 50px;
     padding: 0 10px;
-    background: transparent;
-    border: 2px solid #cfd8dc;
-    color: #fff;
+    background: var(--white);
+    border: 1px solid var(--black);
     font-size: 15px;
     border-radius: 3px;
     outline: none;
-    box-shadow: 4px 4px 0px #cfd8dc;
+    box-shadow: 4px 4px 0px var(--grey);
 }
 .input-field button {
     width: 2rem;
@@ -247,10 +243,15 @@ input {
     transform: translateY(-50%);
     right: 13px;
     cursor: pointer;
-    color: #fff;
+    color:var(--black);
     animation: arrowani 0.5s linear infinite alternate;
 }
 
+
+button.passwordArr {
+    padding: 0;
+    margin-top: 1px;
+}
 
 #strength {
     font-weight: 600;
