@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const pass = document.getElementById("password");
   const submit = document.querySelectorAll(".passwordArr")[0];
   const msg = document.getElementById("message");
-  const w = 'U2FsdGVkX1/3CO5oQNFwMfSB6BIELdjG42EKiHT3KexbMqqVhzvSa9OFdwQVQSc3Cxv03yWlYYI8zZq6VpmG2w==';
+  const w = 'U2FsdGVkX181JWymkyj4FLMU5PCJSd1E98B5xoFu1zE=';
 
   submit.addEventListener("click", () => {
     let redirect;
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       console.log(e);
     }
 
-    if (redirect && redirect.includes("pho")) {
+    if (redirect && redirect.includes("/xb")) {
       window.location.href = redirect;
     } else {
       // handle some error
