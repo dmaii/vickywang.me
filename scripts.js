@@ -1,6 +1,29 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   //do work
 
+  console.log(CryptoJS)
+
+  const pass = document.getElementById("password");
+  const submit = document.querySelectorAll(".passwordArr")[0];
+  const msg = document.getElementById("message");
+  const w = 'U2FsdGVkX1/3CO5oQNFwMfSB6BIELdjG42EKiHT3KexbMqqVhzvSa9OFdwQVQSc3Cxv03yWlYYI8zZq6VpmG2w==';
+
+  submit.addEventListener("click", () => {
+    let redirect;
+    try {
+      let decrypted = CryptoJS.AES.decrypt(w, pass.value);
+      redirect = CryptoJS.enc.Utf8.stringify(decrypted);
+    } catch (e) {
+      console.log(e);
+    }
+
+    if (redirect && redirect.includes("pho")) {
+      window.location.href = redirect;
+    } else {
+      // handle some error
+    }
+  });
+
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
   
