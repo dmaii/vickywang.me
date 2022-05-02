@@ -26,6 +26,19 @@
     rel="stylesheet">
   <!--font font-family: 'Lato', sans-serif; -->
 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet">
+  <!--font awesome -->
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+    integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- crypto js -->
+
   <script type="text/javascript"
     src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <!--jQuery-->
@@ -45,14 +58,26 @@
   <script type="text/javascript" src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
   <!-- gsap - ScrollTrigger-->
 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8YXDWJST2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-E8YXDWJST2');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vicky Wang - Product Designer</title>
-  <meta name="description" content="Vicky Wang's Portfolio Website">
+  <meta name="description" content="Vicky Wang's Portfolio">
+  <meta name="keywords"
+    content="Vicky Wang, Product Design, Product Designer, UI/UX Designer, Designer, Architecture, Architect, San Francisco, UC Berkeley">
+  <meta name="author" content="Vicky Wang">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta property="og:site_name" content="VICKY WANG">
   <meta property="og:url" content="/" />
@@ -61,7 +86,8 @@
   <meta property="og:description" content="Hi! Thanks for stopping by. 
     I enjoy design and code who loves solving challenging problems. 
     Interested in what you see? Shoot me an email :) " />
-  <meta property="og:image" content="//s3-us-west-1.amazonaws.com/vickywang.design/thumbnail.jpg" />
+  <meta property="og:image"
+    content="https://s3.us-west-1.amazonaws.com/vickywang.me/thumbnail.jpg" />
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="750">
   <meta property="og:image:height" content="750">
@@ -81,411 +107,433 @@
 
 <body>
   <!--head-->
-  <!--progress bar-->
+  <!--progressBarScroll-->
   <div class="progressContainer">
     <div class="progress-container">
-      <div class="progress-bar" id="myBar"></div>
+      <div class="progress-bar" id="progressBar"></div>
     </div>
   </div>
-  <!--progress bar-->
-  <div class="header">
-    <div class="head-left">
-      <a href="http://vickywang.me/" class="pointer">VW
+  <!--progressBarScroll-->
+  <!-- header -->
+  <nav class="header">
+    <div class="backgroundColorNav">
+
+      <a href="http://vickywang.me/" class="logo pointer">VW
       </a>
+
+      <div class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item inactive box"><a href="/project" class="nav-link">PROJECT</a></li>
+          <li class="nav-item inactive box"><a href="/architecture"
+              class="nav-link">ARCHITECTURE</a>
+          </li>
+          <li class="nav-item active box"><a href="/photography" class="nav-link">PHOTOGRAPHY</a>
+          </li>
+          <li class="nav-item inactive box"><a href="/" class="nav-link">ABOUT</a></li>
+        </ul>
+      </div>
+
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </div>
-    <div class="head-right ">
-      <a href="/project/" class="inactive  box">
-        PROJECT
-      </a>
-      <a href="/architecture" class="inactive  box">
-        ARCHITECTURE
-      </a>
+  </nav>
+  <!-- header -->
 
-      <a href="/photography" class="active  box">
-        PHOTOGRAPHY
-      </a>
-
-      <a href="/" class="inactive  box">
-        ABOUT
-      </a>
-
-    </div>
-  </div>
-  <!--head-->
-  <!--body-->
-  <div class="blankProject"></div>
-
-  <div class="landingIntro">
+  <div class="blankHL"></div>
+  <!--intro-->
+  <div class="wrapper">
     <div class="intro">
-      <div class="t-hello" id="t-hello-1550">HELLO, </div>
+      <div class="t-hello">HELLO, </div>
     </div>
     <div class="blankHXS"></div>
 
     <div class="intro" data-aos="fade-up">
-      <div class="introVer">
+      <div class="column">
         <div class="t-hi">I'm Vicky.</div>
       </div>
       <p class="divider"></p>
-      <div class="introVer">
+      <div class="column">
         <div class="intro">
-          <span class="t-me">photography</span>
+          <span class="t-me">observation</span>
           <span class="divider1"></span>
-          <span class="t-me"> observation</span>
-
+          <span class="t-me"> photography </span>
         </div>
-        <div class="t-me t-me-1">
-          Selected recent photographs </div>
+        <div class="rowChng">
+          <span class="t-me"> selected photographs </span>
+        </div>
+
       </div>
     </div>
 
     <div class="t-intro zTop" data-aos="fade-up">
-      Always got inspiration from nature. I love to recompose the nature form with my camera in 2
-      dimensions. Observing the narrative of natural components within a certain perspective.</div>
-  </div>
-
-  <div class="centerHorz ver1">
-    <div class=" lineVerAll "></div>
-  </div>
-
-  <!--Photo 1-->
-  <div id="ytrigger-pg">
-    <div class="rowChng marginAll marginAll centerHorz centerVer">
-      <img class="ShadowBox widthXL" src="./01.jpg">
-      <div class="blankVer">
-      </div>
-      <div class="column widthM">
-        <p class="titleL" data-aos="fade-up">Bosque Del Apache National Wildlife Refuge</p>
-        <p class="lineHorizAll"></p>
-        <p class="textM">December, 2019</p>
-        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
-      </div>
-    </div>
-  </div>
-  <!--Photo 1-->
-  <div class="blankHXL"></div>
-
-  <!--Photo 2-->
-
-
-  <div id="ytrigger-pg2">
-    <div class="rowChng marginAll marginAll centerHorz centerVer rowChngRV">
-
-      <div class="column widthM">
-        <p class="titleL" data-aos="fade-up">Bosque Del Apache National Wildlife Refuge</p>
-        <p class="lineHorizAll"></p>
-        <p class="textM">December, 2019</p>
-        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
-      </div>
-      <div class="blankVer">
-      </div>
-      <img class="ShadowBox widthXL" src="./02.jpg">
-    </div>
-
-
-  </div>
-  <!--Photo 2-->
-  <div class="blankHXL"></div>
-
-  <!--Photo 3-->
-  <div id="ytrigger-pg3">
-    <div class="rowChng marginAll marginAll centerHorz centerVer">
-      <img class="ShadowBox widthXL" src="./03.jpg">
-      <div class="blankVer">
-      </div>
-      <div class="column widthM">
-        <p class="titleL" data-aos="fade-up">Bosque Del Apache National Wildlife Refuge</p>
-        <p class="lineHorizAll"></p>
-        <p class="textM">December, 2019</p>
-        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
-      </div>
-    </div>
-  </div>
-  <!--Photo 3-->
-  <div class="blankHXL"></div>
-
-  <!--Photo 4-->
-
-  <div id="ytrigger-pg4">
-
-    <div class="rowChng marginAll marginAll centerHorz centerVer rowChngRV">
-
-      <div class="column widthM">
-        <p href="/Photography" class="titleL" data-aos="fade-up">Sacramento National Wildlife Refuge
-        </p>
-        <p class="lineHorizAll"></p>
-        <p class="textM">December, 2019</p>
-        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
-      </div>
-      <div class="blankVer">
-      </div>
-      <img class=" ShadowBox widthXL" src="./04.jpg">
+      <p>
+        Always got inspiration from nature. I love to recompose the nature form with my camera in 2
+        dimensions. Observing the narrative of natural components within a certain perspective.
+      </p>
     </div>
 
   </div>
+  <!--intro-->
+  <div class="blankHM"></div>
+  <hr>
+  <div class="blankHM"></div>
 
-  <!--Photo 4-->
-  <div class="blankHXL"></div>
 
-  <!--Photo 5-->
-  <div id="ytrigger-pg5">
-
-    <div class="rowChng marginAll marginAll centerHorz centerVer">
-      <img class="ShadowBox widthXL" src="./05.jpg">
-      <div class="blankVer">
-      </div>
-      <div class="column widthM">
-        <p href="/Photography" class="titleL" data-aos="fade-up">Sacramento National Wildlife Refuge
-        </p>
-        <p class="lineHorizAll"></p>
-        <p class="textM">December, 2019</p>
-        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--full Grid--nested">
+      <div class="Grid-cell">
+        <div class="Grid">
+          <p class="tArrow"> Selected Photos </p>
+          <img class="se-arrow" src="../arrow-se.svg" alt="se-arrow">
+        </div>
       </div>
     </div>
   </div>
-  <!--Photo 5-->
-  <div class="blankHXL"></div>
+  <div class="blankHM"></div>
+  <hr>
+  <div class="blankHM"></div>
 
-  <!--Photo 6-->
-  <div id="ytrigger-pg6">
-    <div class="rowChng marginAll marginAll centerHorz centerVer rowChngRV">
 
-      <div class="column widthM">
-        <p href="/Photography" class="titleL" data-aos="fade-up">Sacramento National Wildlife Refuge
-        </p>
-        <p class="lineHorizAll"></p>
-        <p class="textM">December, 2019</p>
-        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+  <div class="wrapper">
+    <div class="Grid Grid--gutters  Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img class="ShadowBox" src="./01.jpg">
+        </div>
       </div>
-      <div class="blankVer">
-      </div>
-      <img class="ShadowBox widthXL" src="./06.jpg">
-    </div>
-  </div>
-  <!--Photo 6-->
-  <div class="blankHXL"></div>
-
-  <!--Photo 7-->
-  <div id="ytrigger-pg7">
-    <div class="rowChng marginAll marginAll centerHorz centerVer">
-      <img class="ShadowBox widthXL" src="./07.jpg">
-      <div class="blankVer">
-      </div>
-      <div class="column widthM">
-        <p class="titleL" data-aos="fade-up">Teton National Park </p>
-        <p class="lineHorizAll"></p>
-        <p class="textM">September, 2020</p>
-        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+      <div class="Grid-cell ">
+        <div class="element">
+          <h4>Bosque Del Apache National Wildlife Refuge</h4>
+          <p class="lineHorizAll"></p>
+          <h6 class="textItalic"><strong>Time: </strong> &nbsp;December, 2019</h6>
+          <h6> <strong>Camera:</strong> &nbsp; Canon 5d mark iii | EF 70-200mm f/2.8L IS II</h6>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!--Photo 7-->
-  <div class="blankHXL"></div>
 
-  <!--Photo 8-->
-  <div id="ytrigger-pg8">
-    <div class="rowChng marginAll marginAll centerHorz centerVer rowChngRV">
+    <div class="blankHM"></div>
+    <hr>
+    <div class="blankHM"></div>
 
-      <div class="column widthM">
-        <p class="titleL" data-aos="fade-up">White Sands National Monument</p>
-        <p class="lineHorizAll"></p>
-        <p class="textM">December, 2019</p>
-        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+    <div class="Grid Grid--gutters  Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img class="ShadowBox" src="./02.jpg">
+        </div>
       </div>
-      <div class="blankVer">
-      </div>
-      <img class="ShadowBox widthXL" src="./08.jpg">
-    </div>
-  </div>
-  <!--Photo 8-->
-  <div class="blankHXL"></div>
-
-  <!--Photo 9-->
-  <div id="ytrigger-pg9">
-
-    <div class="rowChng marginAll marginAll centerHorz centerVer">
-      <img class="ShadowBox widthXL" src="./09.jpg">
-      <div class="blankVer">
-      </div>
-      <div class="column widthM">
-        <p class="titleL" data-aos="fade-up">White Sands National Monument</p>
-        <p class="lineHorizAll"></p>
-        <p class="textM">December, 2019</p>
-        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+      <div class="Grid-cell ">
+        <div class="element">
+          <h4>Bosque Del Apache National Wildlife Refuge</h4>
+          <p class="lineHorizAll"></p>
+          <h6 class="textItalic"><strong>Time: </strong> &nbsp;December, 2019</h6>
+          <h6> <strong>Camera:</strong> &nbsp; Canon 5d mark iii | EF 70-200mm f/2.8L IS II</h6>
+        </div>
       </div>
     </div>
-  </div>
-  <!--Photo 9-->
-  <div class="blankHXL"></div>
+    <div class="blankHM"></div>
+    <hr>
+    <div class="blankHM"></div>
 
-  <!--Photo 10-->
-  <div id="ytrigger-pg10">
-    <div class="rowChng marginAll marginAll centerHorz centerVer rowChngRV">
-
-      <div class="column widthM">
-        <p class="titleL" data-aos="fade-up">White Sands National Monument</p>
-        <p class="lineHorizAll"></p>
-        <p class="textM">December, 2019</p>
-        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+    <div class="Grid Grid--gutters  Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img class="ShadowBox" src="./03.jpg">
+        </div>
       </div>
-      <div class="blankVer">
-      </div>
-      <img class="ShadowBox widthXL" src="./10.jpg">
-    </div>
-  </div>
-  <!--Photo 10-->
-  <div class="blankHXL"></div>
-
-  <!--Photo 11-->
-  <div id="ytrigger-pg11">
-    <div class="rowChng marginAll marginAll centerHorz centerVer">
-      <img class="ShadowBox widthXL" src="./11.jpg">
-      <div class="blankVer">
-      </div>
-      <div class="column widthM">
-        <p class="titleL" data-aos="fade-up">White Sands National Monument</p>
-        <p class="lineHorizAll"></p>
-        <p class="textM">December, 2019</p>
-        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+      <div class="Grid-cell ">
+        <div class="element">
+          <h4>Sacramento National Wildlife Refuge</h4>
+          <p class="lineHorizAll"></p>
+          <h6 class="textItalic"><strong>Time: </strong> &nbsp;December, 2019</h6>
+          <h6> <strong>Camera:</strong> &nbsp; Canon 5d mark iii | EF 70-200mm f/2.8L IS II</h6>
+        </div>
       </div>
     </div>
-  </div>
-  <!--Photo 11-->
-  <div class="blankHXL"></div>
+    <div class="blankHM"></div>
+    <hr>
+    <div class="blankHM"></div>
 
-  <!--Photo 12-->
-
-  <div id="ytrigger-pg12">
-
-    <div class="rowChng marginAll marginAll centerHorz centerVer rowChngRV">
-
-      <div class="column widthM">
-        <p class="titleL" data-aos="fade-up">White Sands National Monument</p>
-        <p class="lineHorizAll"></p>
-        <p class="textM">December, 2019</p>
-        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+    <div class="Grid Grid--gutters  Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img class="ShadowBox" src="./04.jpg">
+        </div>
       </div>
-      <div class="blankVer">
-      </div>
-      <img class="ShadowBox widthXL" src="./12.jpg">
-    </div>
-  </div>
-
-  <!--Photo 12-->
-
-  <div class="blankHXL"></div>
-
-  <!--Photo 13-->
-  <div id="ytrigger-pg13">
-
-    <div class="rowChng marginAll marginAll centerHorz centerVer">
-      <img class="ShadowBox widthXL" src="./13.jpg">
-      <div class="blankVer">
-      </div>
-      <div class="column widthM">
-        <p class="titleL" data-aos="fade-up">White Sands National Monument</p>
-        <p class="lineHorizAll"></p>
-        <p class="textM">December, 2019</p>
-        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+      <div class="Grid-cell ">
+        <div class="element">
+          <h4>Sacramento National Wildlife Refuge</h4>
+          <p class="lineHorizAll"></p>
+          <h6 class="textItalic"><strong>Time: </strong> &nbsp;December, 2019</h6>
+          <h6> <strong>Camera:</strong> &nbsp; Canon 5d mark iii | EF 70-200mm f/2.8L IS II</h6>
+        </div>
       </div>
     </div>
-  </div>
-  <!--Photo 13-->
-  <div class="blankHXL"></div>
-
-  <!--Photo 14-->
-  <div id="ytrigger-pg14">
-
-    <div class="rowChng marginAll marginAll centerHorz centerVer rowChngRV">
-
-      <div class="column widthM">
-        <p class="titleL" data-aos="fade-up">White Sands National Monument</p>
-        <p class="lineHorizAll"></p>
-        <p class="textM">December, 2019</p>
-        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+    <div class="blankHM"></div>
+    <hr>
+    <div class="blankHM"></div>
+    <div class="Grid Grid--gutters  Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img class="ShadowBox" src="./05.jpg">
+        </div>
       </div>
-      <div class="blankVer">
-      </div>
-      <img class="ShadowBox widthXL" src="./14.jpg">
-    </div>
-  </div>
-  <!--Photo 14-->
-
-  <div class="blankHXL"></div>
-
-  <!--Photo 15-->
-  <div id="ytrigger-pg15">
-    <div class="rowChng marginAll marginAll centerHorz centerVer">
-      <img class="ShadowBox widthXL" src="./15.jpg">
-      <div class="blankVer">
-      </div>
-      <div class="column widthM">
-        <p class="titleL" data-aos="fade-up">Yellowstone National Park</p>
-        <p class="lineHorizAll"></p>
-        <p class="textM">September, 2020 </p>
-        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+      <div class="Grid-cell ">
+        <div class="element">
+          <h4>Sacramento National Wildlife Refuge</h4>
+          <p class="lineHorizAll"></p>
+          <h6 class="textItalic"><strong>Time: </strong> &nbsp;December, 2019</h6>
+          <h6> <strong>Camera:</strong> &nbsp; Canon 5d mark iii | EF 70-200mm f/2.8L IS II</h6>
+        </div>
       </div>
     </div>
-  </div>
-  <!--Photo 15-->
-  <div class="blankHXL"></div>
 
-  <!--Photo 16-->
-  <div id="ytrigger-pg16">
 
-    <div class="rowChng marginAll marginAll centerHorz centerVer rowChngRV">
-
-      <div class="column widthM">
-        <p class="titleL" data-aos="fade-up">Taos Pueblo Indian Reservation</p>
-        <p class="lineHorizAll"></p>
-        <p class="textM">December, 2019</p>
-        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+    <div class="blankHM"></div>
+    <hr>
+    <div class="blankHM"></div>
+    <div class="Grid Grid--gutters  Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img class="ShadowBox" src="./06.jpg">
+        </div>
       </div>
-      <div class="blankVer">
-      </div>
-      <img class="ShadowBox widthXL" src="./16.jpg">
-    </div>
-  </div>
-  <!--Photo 16-->
-
-
-  <div class="blankHXL"></div>
-
-  <!--Photo 17-->
-  <div id="ytrigger-pg17">
-    <div class="rowChng marginAll marginAll centerHorz centerVer">
-      <img class="ShadowBox widthXL" src="./17.jpg">
-      <div class="blankVer">
-      </div>
-      <div class="column widthM">
-        <p class="titleL" data-aos="fade-up">Donner Lake </p>
-        <p class="lineHorizAll"></p>
-        <p class="textM">December, 2019 </p>
-        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+      <div class="Grid-cell ">
+        <div class="element">
+          <h4>Sacramento National Wildlife Refuge</h4>
+          <p class="lineHorizAll"></p>
+          <h6 class="textItalic"><strong>Time: </strong> &nbsp;December, 2019</h6>
+          <h6> <strong>Camera:</strong> &nbsp; Canon 5d mark iii | EF 70-200mm f/2.8L IS II</h6>
+        </div>
       </div>
     </div>
-  </div>
-  <!--Photo 17-->
-  <div class="blankHXL"></div>
 
-  <!--Photo 18-->
-  <div id="ytrigger-pg18">
-    <div class="rowChng marginAll marginAll centerHorz centerVer rowChngRV">
-
-      <div class="column widthM">
-        <p class="titleL" data-aos="fade-up">Yellowstone National Park</p>
-        <p class="lineHorizAll"></p>
-        <p class="textM">December, 2019</p>
-        <p class="textM">Canon 5d mark iii | EF 70-200mm f/2.8L IS II</p>
+    <div class="blankHM"></div>
+    <hr>
+    <div class="blankHM"></div>
+    <div class="Grid Grid--gutters  Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img class="ShadowBox" src="./07.jpg">
+        </div>
       </div>
-      <div class="blankVer">
+      <div class="Grid-cell ">
+        <div class="element">
+          <h4>Teton National Park</h4>
+          <p class="lineHorizAll"></p>
+          <h6 class="textItalic"><strong>Time: </strong> &nbsp;September, 2020</h6>
+          <h6> <strong>Camera:</strong> &nbsp; Canon 5d mark iii | EF 70-200mm f/2.8L IS II</h6>
+        </div>
       </div>
-      <img class="ShadowBox widthM" src="./19.jpg">
     </div>
-  </div>
-  <!--Photo 18-->
 
-  <div class="blankHXL"></div>
+    <div class="blankHM"></div>
+    <hr>
+    <div class="blankHM"></div>
+    <div class="Grid Grid--gutters  Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img class="ShadowBox" src="./08.jpg">
+        </div>
+      </div>
+      <div class="Grid-cell ">
+        <div class="element">
+          <h4>White Sands National Monument</h4>
+          <p class="lineHorizAll"></p>
+          <h6 class="textItalic"><strong>Location: </strong> &nbsp;December, 2019</h6>
+          <h6> <strong>Camera:</strong> &nbsp; Canon 5d mark iii | EF 70-200mm f/2.8L IS II</h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="blankHM"></div>
+    <hr>
+    <div class="blankHM"></div>
+    <div class="Grid Grid--gutters  Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img class="ShadowBox" src="./09.jpg">
+        </div>
+      </div>
+      <div class="Grid-cell ">
+        <div class="element">
+          <h4>White Sands National Monument</h4>
+          <p class="lineHorizAll"></p>
+          <h6 class="textItalic"><strong>Location: </strong> &nbsp;December, 2019</h6>
+          <h6> <strong>Camera:</strong> &nbsp; Canon 5d mark iii | EF 70-200mm f/2.8L IS II</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="blankHM"></div>
+    <hr>
+    <div class="blankHM"></div>
+    <div class="Grid Grid--gutters  Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img class="ShadowBox" src="./10.jpg">
+        </div>
+      </div>
+      <div class="Grid-cell ">
+        <div class="element">
+          <h4>White Sands National Monument</h4>
+          <p class="lineHorizAll"></p>
+          <h6 class="textItalic"><strong>Location: </strong> &nbsp;December, 2019</h6>
+          <h6> <strong>Camera:</strong> &nbsp; Canon 5d mark iii | EF 70-200mm f/2.8L IS II</h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="blankHM"></div>
+    <hr>
+    <div class="blankHM"></div>
+    <div class="Grid Grid--gutters  Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img class="ShadowBox" src="./11.jpg">
+        </div>
+      </div>
+      <div class="Grid-cell ">
+        <div class="element">
+          <h4>White Sands National Monument</h4>
+          <p class="lineHorizAll"></p>
+          <h6 class="textItalic"><strong>Location: </strong> &nbsp;December, 2019</h6>
+          <h6> <strong>Camera:</strong> &nbsp; Canon 5d mark iii | EF 70-200mm f/2.8L IS II</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="blankHM"></div>
+    <hr>
+    <div class="blankHM"></div>
+    <div class="Grid Grid--gutters  Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img class="ShadowBox" src="./12.jpg">
+        </div>
+      </div>
+      <div class="Grid-cell ">
+        <div class="element">
+          <h4>White Sands National Monument</h4>
+          <p class="lineHorizAll"></p>
+          <h6 class="textItalic"><strong>Location: </strong> &nbsp;December, 2019</h6>
+          <h6> <strong>Camera:</strong> &nbsp; Canon 5d mark iii | EF 70-200mm f/2.8L IS II</h6>
+        </div>
+      </div>
+    </div>
+    <div class="blankHM"></div>
+    <hr>
+    <div class="blankHM"></div>
+    <div class="Grid Grid--gutters  Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img class="ShadowBox" src="./13.jpg">
+        </div>
+      </div>
+      <div class="Grid-cell ">
+        <div class="element">
+          <h4>White Sands National Monument</h4>
+          <p class="lineHorizAll"></p>
+          <h6 class="textItalic"><strong>Location: </strong> &nbsp;December, 2019</h6>
+          <h6> <strong>Camera:</strong> &nbsp; Canon 5d mark iii | EF 70-200mm f/2.8L IS II</h6>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="blankHM"></div>
+    <hr>
+    <div class="blankHM"></div>
+    <div class="Grid Grid--gutters  Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img class="ShadowBox" src="./14.jpg">
+        </div>
+      </div>
+      <div class="Grid-cell ">
+        <div class="element">
+          <h4>White Sands National Monument</h4>
+          <p class="lineHorizAll"></p>
+          <h6 class="textItalic"><strong>Location: </strong> &nbsp;December, 2019</h6>
+          <h6> <strong>Camera:</strong> &nbsp; Canon 5d mark iii | EF 70-200mm f/2.8L IS II</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="blankHM"></div>
+    <hr>
+    <div class="blankHM"></div>
+    <div class="Grid Grid--gutters  Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img class="ShadowBox" src="./16.jpg">
+        </div>
+      </div>
+      <div class="Grid-cell ">
+        <div class="element">
+          <h4>Taos Pueblo Indian Reservation</h4>
+          <p class="lineHorizAll"></p>
+          <h6 class="textItalic"><strong>Location: </strong> &nbsp;December, 2019</h6>
+          <h6> <strong>Camera:</strong> &nbsp; Canon 5d mark iii | EF 70-200mm f/2.8L IS II</h6>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="blankHM"></div>
+    <hr>
+    <div class="blankHM"></div>
+    <div class="Grid Grid--gutters  Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img class="ShadowBox" src="./17.jpg">
+        </div>
+      </div>
+      <div class="Grid-cell ">
+        <div class="element">
+          <h4>Donner Lake </h4>
+          <p class="lineHorizAll"></p>
+          <h6 class="textItalic"><strong>Location: </strong> &nbsp;December, 2019</h6>
+          <h6> <strong>Camera:</strong> &nbsp; Canon 5d mark iii | EF 70-200mm f/2.8L IS II</h6>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="blankHM"></div>
+    <hr>
+    <div class="blankHM"></div>
+    <div class="Grid Grid--gutters  Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img class="ShadowBox" src="./15.jpg">
+        </div>
+      </div>
+      <div class="Grid-cell ">
+        <div class="element">
+          <h4>Yellowstone National Park</h4>
+          <p class="lineHorizAll"></p>
+          <h6 class="textItalic"><strong>Location: </strong> &nbsp;September, 2020</h6>
+          <h6> <strong>Camera:</strong> &nbsp; Canon 5d mark iii | EF 70-200mm f/2.8L IS II</h6>
+        </div>
+      </div>
+    </div>
+    <div class="blankHM"></div>
+    <hr>
+    <div class="blankHM"></div>
+    <div class="Grid Grid--gutters  Grid--cols-2 Grid--center">
+      <div class="Grid-cell">
+        <div class="element widthL"> <img class="ShadowBox" src="./19.jpg">
+        </div>
+      </div>
+      <div class="Grid-cell ">
+        <div class="element">
+          <h4>Yellowstone National Park</h4>
+          <p class="lineHorizAll"></p>
+          <h6 class="textItalic"><strong>Location: </strong> &nbsp;September, 2020</h6>
+          <h6> <strong>Camera:</strong> &nbsp; Canon 5d mark iii | EF 70-200mm f/2.8L IS II</h6>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <div class="blankHM"></div>
+  <hr>
+  <div class="blankHM"></div>
 
   <p class="tTQ centerHorz" data-aos="fade-up">Thanks for your time and have a good day! </p>
   <p class="textM centerHorz" data-aos="fade-up">More coming soon</p>
@@ -503,8 +551,6 @@
   </button>
   <!--back to top-->
   <div class="blankHXL"></div>
-
-
   <!--footer-->
   <div class="footer">
     <p class="footer-left"> &#169; 2021 &#8212; VICKY WANG
@@ -514,7 +560,7 @@
         <img class="footer-logo" src="../mail.svg" alt="email">
       </a>
 
-      <a href="https://www.linkedin.com/in/vicky-wang-6ab7487b/">
+      <a href="https://www.linkedin.com/in/vicky-wyq/">
         <img class="footer-logo" src="../in.svg" alt="linkedin">
       </a>
 

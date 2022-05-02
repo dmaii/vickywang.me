@@ -6,7 +6,6 @@
   <script type="text/javascript" src="scripts.js"></script>
 
 
-
   <link
     href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
     rel="stylesheet">
@@ -28,6 +27,19 @@
     rel="stylesheet">
   <!--font font-family: 'Lato', sans-serif; -->
 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet">
+  <!--font awesome -->
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+    integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- crypto js -->
+
   <script type="text/javascript"
     src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <!--jQuery-->
@@ -47,14 +59,26 @@
   <script type="text/javascript" src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
   <!-- gsap - ScrollTrigger-->
 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8YXDWJST2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-E8YXDWJST2');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vicky Wang - Product Designer</title>
-  <meta name="description" content="Vicky Wang's Portfolio Website">
+  <meta name="description" content="Vicky Wang's Portfolio">
+  <meta name="keywords"
+    content="Vicky Wang, Product Design, Product Designer, UI/UX Designer, Designer, Architecture, Architect, San Francisco, UC Berkeley">
+  <meta name="author" content="Vicky Wang">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta property="og:site_name" content="VICKY WANG">
   <meta property="og:url" content="/" />
@@ -63,7 +87,8 @@
   <meta property="og:description" content="Hi! Thanks for stopping by. 
     I enjoy design and code who loves solving challenging problems. 
     Interested in what you see? Shoot me an email :) " />
-  <meta property="og:image" content="//s3-us-west-1.amazonaws.com/vickywang.design/thumbnail.jpg" />
+  <meta property="og:image"
+    content="https://s3.us-west-1.amazonaws.com/vickywang.me/thumbnail.jpg" />
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="750">
   <meta property="og:image:height" content="750">
@@ -82,257 +107,337 @@
 </head>
 
 <body>
-  <!--head-->
-  <!--progress bar-->
+  <!--progressBarScroll-->
   <div class="progressContainer">
     <div class="progress-container">
-      <div class="progress-bar" id="myBar"></div>
+      <div class="progress-bar" id="progressBar"></div>
     </div>
   </div>
-  <!--progress bar-->
-  <div class="header">
-    <div class="head-left">
-      <a href="http://vickywang.me/" class="pointer">VW
+  <!--progressBarScroll-->
+  <!-- header -->
+  <nav class="header">
+    <div class="backgroundColorNav">
+
+      <a href="http://vickywang.me/" class="logo pointer">VW
       </a>
+
+      <div class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item inactive box"><a href="/project" class="nav-link">PROJECT</a></li>
+          <li class="nav-item active box"><a href="/architecture" class="nav-link">ARCHITECTURE</a>
+          </li>
+          <li class="nav-item inactive box"><a href="/photography" class="nav-link">PHOTOGRAPHY</a>
+          </li>
+          <li class="nav-item inactive box"><a href="/" class="nav-link">ABOUT</a></li>
+        </ul>
+      </div>
+
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </div>
-    <div class="head-right ">
-      <a href="/project/" class="inactive  box">
-        PROJECT
-      </a>
-      <a href="/architecture" class="active  box">
-        ARCHITECTURE
-      </a>
 
-      <a href="/photography" class="inactive  box">
-        PHOTOGRAPHY
-      </a>
-
-      <a href="/" class="inactive  box">
-        ABOUT
-      </a>
-
-    </div>
-  </div>
-  <!--head-->
-  <!--body-->
-
-  <div class="blankProject"></div>
-
-  <div class="landingIntro">
+  </nav>
+  <!-- header -->
+  <div class="blankHL"></div>
+  <!--intro-->
+  <div class="wrapper">
     <div class="intro">
-      <div class="t-hello" id="t-hello-1550">HELLO, </div>
+      <div class="t-hello">HELLO, </div>
     </div>
     <div class="blankHXS"></div>
 
     <div class="intro" data-aos="fade-up">
-      <div class="introVer">
-
+      <div class="column">
         <div class="t-hi">I'm Vicky.</div>
       </div>
       <p class="divider"></p>
-      <div class="introVer">
+      <div class="column">
         <div class="intro">
           <span class="t-me">architecture</span>
           <span class="divider1"></span>
-          <span class="t-me"> design</span>
-
+          <span class="t-me"> design </span>
         </div>
-        <div class="t-me t-me-1">
-          selected academic projects </div>
+        <div class="rowChng">
+          <span class="t-me"> selected academic projects </span>
+        </div>
+
       </div>
     </div>
 
     <div class="t-intro zTop" data-aos="fade-up">
-      Most of the projects are from my three-year Master of Architecture program. The main focuses
-      were Design Theories, Methods, and Practices. Projects emphasize the major format, spatial,
-      material, tectonic, social, technological, and environmental determinants of building form.
-      the penultimate studio incorporate integrative thinking that shapes complex architectural
-      design and technical solutions based on design research and studio requirements.</div>
-  </div>
-  <div class="centerHorz ver1">
-    <div class="lineVerAll "></div>
-  </div>
-
-
-
-
-  <!--architecture 1-->
-  <div id="ytrigger-arch">
-    <div class="rowChng marginAll marginAll centerHorz centerVer">
-      <a href="./recreation_commons"><img src="./ar_01.svg" class="widthS float"> </a>
-      <div class="blankVer">
-      </div>
-      <div class="column widthM">
-        <a class="titleL" data-aos="fade-up" href="./recreation_commons">
-          RECREATION COMMONS </a>
-        </p>
-        <p class="lineHorizAll"></p>
-        <p class="textM">INTEGRATED DESIGN STUDIO, ARCH 203, Fall 2018</p>
-        <p class="textM">M. Arch, CED, UC Berkeley</p>
-        <p class="textM">Instructor: Roddy Creedon</p>
-        <p class="textM">Duration: One Semester</p>
-
-        <p class="textM">Site: 110 Franklin St. San Francisco, CA, 94102</p>
-        <p class="textM">Total Floor Area: 22900 s.f. 4 Floors</p>
-      </div>
-    </div>
-  </div>
-
-  <!--architecture 1-->
-  <div class="blankHXL"></div>
-
-  <!--architecture 2-->
-  <div id="ytrigger-arch2">
-    <div class="rowChng marginAll marginAll centerHorz centerVer rowChngRV">
-
-      <div class="column widthM">
-        <a class="titleL" data-aos="fade-up" href="./narrow_stripes/"> NARROW STRIPES </a>
-        <p class="lineHorizAll"></p>
-        <p class="textM">COMPETITION, HYDE PARK LIBRARY LONDON, Fall 2017 </p>
-        <p class="textM">Duration: Six Weeks </p>
-        <p class="textM">Site: Location: Hyde Park, London </p>
-        <p class="textM">7500 square metres approx. </p>
-        <p class="textM">Maximum Built Area: 4000 square metres </p>
-      </div>
-      <div class="blankVer">
-      </div>
-      <a href="./narrow_stripes/"> <img class="ShadowBox float" src="./ar_02.jpg"> </a>
-    </div>
-  </div>
-  <!--architecture 2-->
-  <div class="blankHXL"></div>
-  <!--THESIS 3-->
-  <div id="ytrigger-arch3">
-    <div class="rowChng marginAll marginAll centerHorz centerVer">
-      <a href="./thesis_studio/"><img class="ShadowBox float" src="./ar_07.jpg"></a>
-      <div class="blankVer">
-      </div>
-      <div class="column widthM">
-        <a class="titleL" data-aos="fade-up" href="./thesis_studio/">ON ORDER: DIFFERENTIATED
-          CONTINUITY OF
-          OBJECTS
-        </a>
-        <p class="lineHorizAll"></p>
-        <p class="textM">THESIS STUDIO, ARCH 204 A & B, 2018 - 2019 </p>
-        <p class="textM">M. Arch, CED, UC Berkeley</p>
-        <p class="textM">Instructor: Rudabeh Pakravan, Kyle Steinfeld </p>
-        <p class="textM">Duration: Two Semesters</p>
-      </div>
-    </div>
-  </div>
-  <!--THESIS 3-->
-  <div class="blankHXL"></div>
-  <!--MANIFOLD GROUND 4-->
-  <div id="ytrigger-arch4">
-    <div class="rowChng marginAll marginAll centerHorz centerVer rowChngRV">
-      <div class="column widthM">
-        <a class="titleL" data-aos="fade-up" href="./manifold_ground/">MANIFOLD GROUND </a>
-        <p class="lineHorizAll"></p>
-        <p class="textM">[IN]ARCH ADV, SUMMERS 2014 </p>
-        <p class="textM">Summer Program, CED, UC Berkeley </p>
-        <p class="textM">Instructor: Keith Plymale </p>
-        <p class="textM">Duration: One Semester</p>
-        <p class="textM">Site: 450 Hayes St. San Francisco, CA 94102 </p>
-      </div>
-      <div class="blankVer">
-      </div>
-      <a class="t-title" href="./manifold_ground/"> <img class="ShadowBox float" src="./ar_04.jpg"></a>
-    </div>
-  </div>
-  <!--MANIFOLD GROUND 4-->
-  <div class="blankHXL"></div>
-
-  <!--RECOVERY OF RIVER EDGES 5-->
-  <div id="ytrigger-arch5">
-
-    <div class="rowChng marginAll marginAll centerHorz centerVer">
-      <a class="t-title" href="./recovery_of_river_edges/"> <img class="ShadowBox float"
-          src="./ar_03.jpg"></a>
-      <div class="blankVer">
-      </div>
-      <div class="column widthM">
-        <a class="titleL" data-aos="fade-up" href="./recovery_of_river_edges/"> RECOVERY OF
-          RIVER EDGES </a>
-        <p class="lineHorizAll"></p>
-        <p class="textM">Introduction to Architecture Studio 2, Spring 2016 </p>
-        <p class="textM">M. Arch, CED, UC Berkeley </p>
-        <p class="textM">Instructor: Jay Atherton </p>
-        <p class="textM">Duration: One Semester</p>
-        <p class="textM">Site: Sunnynook River Park, 2901 Glendale Blvd, Los Angeles, CA 90039
-        </p>
-      </div>
-    </div>
-  </div>
-  <!--RECOVERY OF RIVER EDGES 5 -->
-  <div class="blankHXL"></div>
-  <!--CURVES 6-->
-  <div id="ytrigger-arch6">
-    <div class="rowChng marginAll marginAll centerHorz centerVer rowChngRV">
-
-      <div class="column widthM">
-        <a class="titleL" data-aos="fade-up" href="./the_rotation_of_curves/">THE ROTATION OF
-          CURVES </a>
-        <p class="lineHorizAll"></p>
-        <p class="textM">Introduction to Architecture Studio 1, Fall 2015 </p>
-        <p class="textM">M. Arch, CED, UC Berkeley </p>
-        <p class="textM">Instructor: Rudabeh Pakravan </p>
-        <p class="textM">Duration: One Semester</p>
-      </div>
-      <div class="blankVer">
-      </div>
-      <a class="titleL" href="./the_rotation_of_curves/"> <img class="ShadowBox float"
-          src="./ar_05.jpg"></a>
+      <p>
+        Most of the projects are from my three-year Master of Architecture program. The main focuses
+        were Design Theories, Methods, and Practices. Projects emphasize the major format, spatial,
+        material, tectonic, social, technological, and environmental determinants of building form.
+        the penultimate studio incorporate integrative thinking that shapes complex architectural
+        design and technical solutions based on design research and studio requirements.
+      </p>
     </div>
 
   </div>
-  <!--CURVES 6-->
-  <div class="blankHXL"></div>
-  <!--LACMA 7-->
-  <div id="ytrigger-arch7">
-
-    <div class="rowChng marginAll marginAll centerHorz centerVer">
-      <a class="titleL" href="./LACAMA/"> <img class="ShadowBox float" src="./ar_08.jpg"></a>
-      <div class="blankVer">
+  <!--intro-->
+  <div class="blankHM"></div>
+  <hr>
+  <div class="blankHM"></div>
+  <!--   RECREATION COMMONS -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--full Grid--nested">
+      <div class="Grid-cell">
+        <div class="Grid">
+          <p class="tArrow"> Selected Projects </p>
+          <img class="se-arrow" src="../arrow-se.svg" alt="se-arrow">
+        </div>
       </div>
-      <div class="column widthM">
-        <a class="titleL" data-aos="fade-up" href="./LACAMA/">LACMA</a>
-        <p class="lineHorizAll"></p>
-        <p class="textM">M. Arch, CED, UC Berkeley, ARCH 201, FALL 2016 </p>
-        <p class="textM">Instructor: Mark Anderson</p>
-        <p class="textM">Duration: One Semester</p>
+    </div>
+    <div class="blankHM"></div>
+    <div class="Grid Grid--gutters Grid--cols-2 Grid--center ">
+      <div class="Grid-cell ">
+        <a href="./recreation_commons"><img src="./ar_01.svg" class="widthM float"> </a>
+      </div>
+      <div class="Grid--1of3 ">
+        <div class="Grid-cell">
+          <div class="element">
+            <a href="./recreation_commons" data-aos="fade-up">
+              <h4>RECREATION COMMONS</h4>
+            </a>
+            <p class="lineHorizAll"></p>
+            <h6 class=""> <strong>Studio:</strong> &nbsp; INTEGRATED DESIGN STUDIO, ARCH 203</h6>
+            <h6 class="textItalic"><strong>Time: </strong> &nbsp;Fall 2018</h6>
+            <h6> <strong>Location:</strong> &nbsp; M. Arch, CED, UC Berkeley</h6>
+            <h6> <strong>Site:</strong> &nbsp; Site: 110 Franklin St. San Francisco</h6>
+            <h6> <strong>Scale:</strong> &nbsp; Total Floor Area: 22900 s.f. 4 Floors</h6>
+
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <!-- LACMA 7-->
-  <div class="blankHXL"></div>
+  <!--   RECREATION COMMONS -->
+  <div class="blankHL"></div>
+  <hr>
+  <div class="blankHL"></div>
+  <!-- NARROW STRIPES -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-2 Grid--center ">
+      <div class="Grid-cell ">
+        <a href="./narrow_stripes/"> <img class="ShadowBox float widthL" src="./ar_02.jpg"> </a>
 
-
-
-  <!--architecture 8-->
-  <div id="ytrigger-arch8">
-    <div class="rowChng marginAll marginAll centerHorz centerVer rowChngRV">
-
-      <div class="column widthM">
-        <p class="titleL" data-aos="fade-up">KAPPE HOUSE STUDY </p>
-        <p class="lineHorizAll"></p>
-        <p class="textM">THE MAKING OF BUILDINGS, ARCH 209, FALL 2015</p>
-        <p class="textM">M. Arch, CED, UC Berkeley </p>
-        <p class="textM">Instructor: Yung Ho Chang </p>
-        <p class="textM">Duration: One Semester, One Unit</p>
       </div>
-      <div class="blankVer">
+      <div class="Grid--1of3 ">
+        <div class="Grid-cell">
+          <div class="element">
+            <a href="./narrow_stripes/" data-aos="fade-up">
+              <h4>NARROW STRIPES</h4>
+            </a>
+            <p class="lineHorizAll"></p>
+            <h6 class=""> <strong>Studio:</strong> &nbsp; COMPETITION</h6>
+            <h6 class="textItalic"><strong>Time: </strong> &nbsp;Fall 2017</h6>
+            <h6> <strong>Location:</strong> &nbsp; HYDE PARK LIBRARY LONDON</h6>
+            <h6> <strong>Site:</strong> &nbsp; Site: Location: Hyde Park, London</h6>
+            <h6> <strong>Scale:</strong> &nbsp; Maximum Built Area: 4000 square metres</h6>
+
+          </div>
+        </div>
       </div>
-
-
-
-      <img class="widthL float" src="./ar_06.jpg">
     </div>
   </div>
+  <!--  NARROW STRIPES -->
+  <div class="blankHL"></div>
+  <hr>
+  <div class="blankHL"></div>
+  <!-- THESIS  -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-2 Grid--center ">
+      <div class="Grid-cell ">
+        <a href="./thesis_studio/"><img class="ShadowBox float widthL" src="./ar_07.jpg"></a>
 
-  <!--architecture 8-->
+      </div>
+      <div class="Grid--1of3 ">
+        <div class="Grid-cell">
+          <div class="element">
+            <a data-aos="fade-up" href="./thesis_studio/">
+              <h6>ON ORDER: DIFFERENTIATED </h6>
+              <h4>CONTINUITY OF OBJECTS</h4>
 
-  <div class="blankHXL"></div>
 
+            </a>
+            <p class="lineHorizAll"></p>
+            <h6 class=""> <strong>Studio:</strong> &nbsp; THESIS STUDIO, ARCH 204 A & B</h6>
+            <h6 class="textItalic"><strong>Time: </strong> &nbsp;2018 - 2019 Two Semesters</h6>
+            <h6> <strong>Location:</strong> &nbsp; M. Arch, CED, UC Berkeley</h6>
+            <h6> <strong>Site:</strong> &nbsp; Site: Location: Hyde Park, London</h6>
+            <h6> <strong>Instructor:</strong> &nbsp; Rudabeh Pakravan, Kyle Steinfeld </h6>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  THESIS -->
+  <div class="blankHL"></div>
+  <hr>
+  <div class="blankHL"></div>
+  <!-- MANIFOLD GROUND  -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-2 Grid--center ">
+      <div class="Grid-cell ">
+        <a class="t-title" href="./manifold_ground/"> <img class="ShadowBox float widthL"
+            src="./ar_04.jpg"></a>
+      </div>
+      <div class="Grid--1of3 ">
+        <div class="Grid-cell">
+          <div class="element">
+            <a data-aos="fade-up" href="./manifold_ground/">
+              <h4>MANIFOLD GROUND</h4>
+            </a>
+            <p class="lineHorizAll"></p>
+            <h6 class=""> <strong>Studio:</strong> &nbsp; [IN]ARCH ADV </h6>
+            <h6 class="textItalic"><strong>Time & Duration: </strong> &nbsp; SUMMERS 2014 6 Weeks
+            </h6>
+            <h6> <strong>Location:</strong> &nbsp; Summer Program, CED, UC Berkeley</h6>
+            <h6> <strong>Site:</strong> &nbsp; 450 Hayes St. San Francisco, CA 94102</h6>
+            <h6> <strong>Instructor:</strong> &nbsp; Keith Plymale </h6>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  MANIFOLD GROUND -->
+  <div class="blankHL"></div>
+  <hr>
+  <div class="blankHL"></div>
+  <!-- RECOVERY OF RIVER EDGES  -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-2 Grid--center ">
+      <div class="Grid-cell ">
+        <a class="t-title" href="./recovery_of_river_edges/"> <img class="ShadowBox float widthL"
+            src="./ar_03.jpg"></a>
+      </div>
+      <div class="Grid--1of3 ">
+        <div class="Grid-cell">
+          <div class="element">
+            <a data-aos="fade-up" href="./recovery_of_river_edges/">
+              <h4>RECOVERY OF RIVER EDGES</h4>
+
+            </a>
+            <p class="lineHorizAll"></p>
+            <h6 class=""> <strong>Studio:</strong> &nbsp; Introduction to Architecture Studio 2
+            </h6>
+            <h6 class="textItalic"><strong>Time & Duration: </strong> &nbsp; Spring 2016 One
+              Semester </h6>
+            <h6> <strong>Location:</strong> &nbsp; M. Arch, CED, UC Berkeley </h6>
+            <h6> <strong>Site:</strong> &nbsp; Sunnynook River Park, Los Angeles
+            </h6>
+            <h6> <strong>Instructor:</strong> &nbsp; Jay Atherton </h6>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  RECOVERY OF RIVER EDGES -->
+  <div class="blankHL"></div>
+  <hr>
+  <div class="blankHL"></div>
+  <!-- THE ROTATION OF CURVES  -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-2 Grid--center ">
+      <div class="Grid-cell ">
+        <a class="t-title" href="./the_rotation_of_curves/"> <img class="ShadowBox float widthL"
+            src="./ar_05.jpg"></a>
+      </div>
+      <div class="Grid--1of3 ">
+        <div class="Grid-cell">
+          <div class="element">
+            <a data-aos="fade-up" href="./the_rotation_of_curves/">
+              <h4>THE ROTATION</h4>
+              <h4>OF CURVES</h4>
+
+            </a>
+            <p class="lineHorizAll"></p>
+            <h6 class=""> <strong>Studio:</strong> &nbsp; Introduction to Architecture Studio 1
+            </h6>
+            <h6 class="textItalic"><strong>Time & Duration: </strong> &nbsp; Fall 2015 | 1
+              Semester </h6>
+            <h6> <strong>Location:</strong> &nbsp; M. Arch, CED, UC Berkeley </h6>
+            <h6> <strong>Instructor:</strong> &nbsp; Rudabeh Pakravan </h6>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  THE ROTATION OF CURVES -->
+  <div class="blankHL"></div>
+  <hr>
+  <div class="blankHL"></div>
+  <!-- THE ROTATION OF CURVES  -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-2 Grid--center ">
+
+
+      <div class="Grid-cell ">
+        <a class="t-title" href="./LACAMA/"> <img class="ShadowBox float widthL"
+            src="./ar_08.jpg"></a>
+      </div>
+      <div class="Grid--1of3 ">
+        <div class="Grid-cell">
+          <div class="element">
+            <a data-aos="fade-up" href="./LACAMA/">
+              <h4>LACMA</h4>
+            </a>
+            <p class="lineHorizAll"></p>
+            <h6 class=""> <strong>Studio:</strong> &nbsp; ARCH 201 </h6>
+            <h6 class="textItalic"><strong>Time & Duration: </strong> &nbsp; Fall 2016 | One
+              Semester </h6>
+            <h6> <strong>Location:</strong> &nbsp; M. Arch, CED, UC Berkeley </h6>
+            <h6> <strong>Site:</strong> &nbsp; Los Angeles County Museum of Art </h6>
+            <h6> <strong>Instructor:</strong> &nbsp; Mark Anderson, Andrew Zago </h6>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  THE ROTATION OF CURVES -->
+  <div class="blankHL"></div>
+  <hr>
+  <div class="blankHL"></div>
+  <!-- KAPPE HOUSE STUDY  -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-2 Grid--center ">
+      <div class="Grid-cell ">
+        <img class="widthL float widthL" src="./ar_06.jpg">
+
+      </div>
+      <div class="Grid--1of3 ">
+        <div class="Grid-cell">
+          <div class="element">
+            <a data-aos="fade-up" href="./LACAMA/">
+              <h4>KAPPE HOUSE STUDY</h4>
+
+            </a>
+            <p class="lineHorizAll"></p>
+            <h6 class=""> <strong>Studio:</strong> &nbsp; THE MAKING OF BUILDINGS </h6>
+            <h6 class="textItalic"><strong>Time & Duration: </strong> &nbsp; Fall 2015 | 1
+              Semester, 1 Unit </h6>
+            <h6> <strong>Location:</strong> &nbsp; M. Arch, CED, UC Berkeley </h6>
+            <h6> <strong>Site:</strong> &nbsp; KAPPE HOUSE </h6>
+            <h6> <strong>Instructor:</strong> &nbsp; Yung Ho Chang </h6>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  KAPPE HOUSE STUDY -->
+  <div class="blankHL"></div>
+  <hr>
+  <div class="blankHL"></div>
 
   <p class="tTQ centerHorz" data-aos="fade-up">Thanks for your time and have a good day! </p>
   <p class="textM centerHorz" data-aos="fade-up">please email me for professional projects</p>
@@ -341,12 +446,12 @@
   <!--body-->
 
 
+  <div class="blankHM"></div>
 
 
 
 
   <!--footer-->
-  <div class="blankHXL"></div>
 
   <!--back to top-->
   <button id="myBtn" class=" myBtn-1550" title="Go to top">
@@ -356,7 +461,6 @@
 
   </button>
   <!--back to top-->
-
   <!--footer-->
   <div class="footer">
     <p class="footer-left"> &#169; 2021 &#8212; VICKY WANG
@@ -366,7 +470,7 @@
         <img class="footer-logo" src="../mail.svg" alt="email">
       </a>
 
-      <a href="https://www.linkedin.com/in/vicky-wang-6ab7487b/">
+      <a href="https://www.linkedin.com/in/vicky-wyq/">
         <img class="footer-logo" src="../in.svg" alt="linkedin">
       </a>
 

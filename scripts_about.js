@@ -1,5 +1,35 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   //do work
+  console.log(CryptoJS)
+
+  const pass = document.getElementById("password");
+  const submit = document.querySelectorAll(".passwordArr")[0];
+  const msg = document.getElementById("pwIncorrect");
+  const w = 'U2FsdGVkX19oLUQ5jGSt/8/BznuKKmnoGgwpbQPYIbeXe3qedrMX9ePhdFn9BFIe';
+
+  submit.addEventListener("click", () => {
+    let redirect;
+    try {
+      let decrypted = CryptoJS.AES.decrypt(w, pass.value);
+      redirect = CryptoJS.enc.Utf8.stringify(decrypted);
+    } catch (e) {
+      console.log(e);
+    }
+
+    if (redirect && redirect.includes("/xb")) {
+      window.location.href = redirect;
+      msg.style.display = "none";
+    } else {
+      // handle some error
+      msg.style.display = "block";
+    }
+  });
+
+
+
+
+
+
 
   function makeCarousel(carousel) {
     var carouselContent = carousel.querySelector('.carouselAbout-content');
