@@ -3,19 +3,15 @@
     --black: #181818;
     /* title */
     --grey: #858585;
-    /* text */
-    --grey-lightest: #f8f8f8;
-    --grey-light: #efefef;
-    --grey-x: #eeeeee;
 
-    --white: #ffffff;
-    --green: #296448;
-    --testing: #eff4ff;
+    /* text */
+    --grey-darkest: #909090;
+    --grey-dark: #c8c8c8;
+    --grey-normal: #e4e4e4;
+    --grey-light: #efefef;
+    --grey-lightest: #f8f8f8;
 
     --border-radius: 0.5em;
-
-
-
     font-family: 'Lato', sans-serif;
 
 }
@@ -221,13 +217,19 @@ hr {
 
 /* element = demo */
 
-.element1 {
-    font-size: 1.2em;
-    font-weight: 500;
-    padding: 0.8em;
+.elementCard {
+    padding: 0.8em 1em 0;
+    margin-bottom: 1em;
+    background: var(--grey-lightest);
     transition: background-color 0.3s ease;
+    border: 1px solid var(--grey-light);
+    border-radius: 3px;
 }
 
+
+.elementCard:hover {
+    background: var(--grey-light);
+}
 
 
 .element {

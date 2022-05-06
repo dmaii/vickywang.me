@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="../main2.0.css">
+  <link rel="stylesheet" href="../../main.css">
   <script type="text/javascript" src="../../scripts.js"></script>
   <script type="text/javascript" src="scripts.js"></script>
 
@@ -79,54 +79,51 @@
 </head>
 
 <body>
-
-
-  <!--head-->
-  <!--progress bar-->
+  <!--progressBarScroll-->
   <div class="progressContainer">
     <div class="progress-container">
-      <div class="progress-bar" id="myBar"></div>
+      <div class="progress-bar" id="progressBar"></div>
     </div>
   </div>
-  <!--progress bar-->
-  <div class="header">
-    <div class="head-left">
-      <a href="http://vickywang.me/" class="pointer">VW
+  <!--progressBarScroll-->
+  <!-- header -->
+  <nav class="header">
+    <div class="blankHM"></div>
+
+    <div class="backgroundColorNav">
+      <a href="http://vickywang.me/" class="logo pointer">VW
       </a>
+
+      <div class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item inactive box"><a href="/project" class="nav-link">PROJECT</a></li>
+          <li class="nav-item inactive box"><a href="/architecture"
+              class="nav-link">ARCHITECTURE</a>
+          </li>
+          <li class="nav-item inactive box"><a href="/photography" class="nav-link">PHOTOGRAPHY</a>
+          </li>
+          <li class="nav-item active box"><a href="/" class="nav-link">ABOUT</a></li>
+        </ul>
+      </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </div>
-    <div class="head-right ">
-      <a href="/project/" class="active  box">
-        PROJECT
-      </a>
-      <a href="/architecture" class="inactive  box">
-        ARCHITECTURE
-      </a>
+    <div class="blankHM"></div>
 
-      <a href="/photography" class="inactive  box">
-        PHOTOGRAPHY
-      </a>
-
-      <a href="/" class="inactive  box">
-        ABOUT
-      </a>
-    </div>
-  </div>
-  <span id="circle" class="circle"></span>
-
-  <!--head-->
-
-  <!--body-->
+  </nav>
+  <!-- header -->
 
 
   <!--about gardenershub-->
   <div class="colorGrey" id="bg-color-trigger">
     <div class="blankProject"></div>
-
-
     <div class="rowChng centerHorz centerVer alignCPH">
       <img src="../../layout_gardenershub.png" alt="Meal Planner" class="widthXL">
       <div class="column widthMPhHalf">
-        <P class="titleL">GARDENERS HUB</P>
+        <h2>GARDENERS HUB</h2>
         <p class="lineHorizAll"></p>
         <p class="textS"> <strong>My Role:</strong> &nbsp; Design Research, UX/UI Design, Wireframing, Branding, Prototyping, Usability Testing
         </p>
@@ -149,7 +146,7 @@
   <div class="blankHXL"></div>
 
   <!-- content-->
-  <div class="rowVW marginAll heightM centerVer marginAll">
+  <div class="rowVW wrapper heightM centerVer">
     <p class="tArrow"> Initial Concepts </p>
     <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
   </div>
@@ -157,7 +154,7 @@
   <!-- initial concepts -->
 
 
-  <div class="marginAll marginAll rowChng">
+  <div class="wrapper rowChng">
     <div class="column centerVer colorGreyShadow border-radius heightL widthS marginIcon svg float">
       <img class="widthLogo paddingS" src="icon_concepts1.svg" alt="User Research">
       <P class="lineHorizSmallAMGH colorGHbg1"> </P>
@@ -218,7 +215,7 @@
   </div>
 
   <!-- content-->
-  <div class="marginAll">
+  <div class="wrapper">
     <div class="content-tl">
       <p class="tArrow"> Final Design </p>
       <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
@@ -227,7 +224,7 @@
 
   <!-- content-->
   <!--Img 1-->
-  <div id="ytrigger-gh1" class="rowChng rowChngRV centerVer marginAll marginAll">
+  <div id="ytrigger-gh1" class="rowChng rowChngRV centerVer wrapper">
     <div class="column">
       <p class="titleL">Sell and Share</p>
       <p class="lineHorizAll"></p>
@@ -239,7 +236,7 @@
   <div class="blankHL"></div>
 
   <!--img 2-->
-  <div class="rowChng centerVer marginAll marginAll" id="ytrigger-gh2">
+  <div class="rowChng centerVer wrapper " id="ytrigger-gh2">
     <img src="solution_socialnetwork.png" class="widthL" alt="DIAGRAM">
     <div class="blankVer">
     </div>
@@ -256,7 +253,7 @@
   <div class="blankHL"></div>
 
   <!--Img 3-->
-  <div id="ytrigger-gh3" class="rowChng rowChngRV centerVer marginAll marginAll">
+  <div id="ytrigger-gh3" class="rowChng rowChngRV centerVer wrapper ">
     <div class="column">
       <p class="titleL">Plant Profile</p>
       <p class="lineHorizAll"></p>
@@ -269,7 +266,7 @@
   <div class="blankHL"></div>
 
   <!--img 4-->
-  <div class="rowChng centerVer marginAll marginAll" id="ytrigger-gh4">
+  <div class="rowChng centerVer wrapper " id="ytrigger-gh4">
     <img class="widthL" src="solution_account.png" alt="DIAGRAM">
     <div class="blankVer">
     </div>
@@ -288,43 +285,43 @@
 
 
   <!-- content-->
-  <div class="rowVW marginAll heightM centerVer marginAll">
+  <div class="rowVW wrapper heightM centerVer ">
     <p class="tArrow"> Case Study </p>
     <img class="se-arrow" src="../../arrow-se.svg" alt="se-arrow">
   </div>
   <!-- content-->
   <!--Problem and solution-->
-  <div class="rowChng align-top marginAll marginAll">
+  <div class="rowChng align-top wrapper ">
     <div class="column">
-      <P class="titleL">PROBLEMS</P>
+      <h3 >PROBLEMS</h3>
       <p class="lineHorizAll"></p>
-      <p class="textM widthM ">Gardeners Hub Application aims to build the local market
+      <h5 >Gardeners Hub Application aims to build the local market
         network
         and improve the horticultural experience by offering more comprehensive local market
         networking opportunities to the gardeners that result in reducing wasting resources and
         preventing establishment failure by improving learning and sharing experience. An
         overwhelming of resources and misunderstanding that result in failure horticultural
         experience by those involved in the horticultural process.
-      </p>
+      </h5>
     </div>
     <div class="lineVerAll">
     </div>
     <div class="column">
-      <P class="titleL">SOLUTIONS</P>
+      <h3 >SOLUTIONS</h3>
       <p class="lineHorizAll"></p>
-      <p class="textM">Gardeners' Hub provides a local marketplace platform to help gardeners
+      <h5 >Gardeners' Hub provides a local marketplace platform to help gardeners
         reduce wasting resources and a regional social network with the local community.
-      </p>
+      </h5>
     </div>
     <div class="lineVerAll"></div>
     <div class="column">
-      <P class="titleL">PROCESS</P>
+      <h3>PROCESS</h3>
       <p class="lineHorizAll"></p>
-      <p class="textM">The goal of this project is to find solutions and ideas to help
+      <h5 >The goal of this project is to find solutions and ideas to help
         gardeners to improve their horticultural experience with neighbors and reduce wasting
         resources by selling or sharing locally.
 
-      </p>
+      </h5>
     </div>
   </div>
   <!--Problem solution Process-->
@@ -333,51 +330,51 @@
 
   <!--design thinking process-->
 
-  <div class="rowChng centerHorz align-top marginAll marginAll centerPhone">
+  <div class="rowChng centerHorz align-top wrapper centerPhone">
 
     <div class="column centerVer">
-      <P class="centerVer centerHorz colorGreyShadow circleGH titleL">Empathize </P>
+      <h4 class="centerVer centerHorz colorGreyShadow circleGH ">Empathize </h4>
       <div class="blankHS"></div>
-      <P class="textS"> &#183; User Research</P>
-      <P class="textS"> &#183; Competitive Analysis </P>
+      <h5 > &#183; User Research</h5>
+      <h5 > &#183; Competitive Analysis </h5>
     </div>
 
     <P class="researchArr"></P>
 
     <div class="column centerVer">
-      <P class="centerVer centerHorz colorGreyShadow circleGH  titleL">Define </P>
+      <h4 class="centerVer centerHorz colorGreyShadow circleGH  ">Define </h4>
       <div class="blankHS"></div>
 
-      <P class="textS"> &#183; Contextual Inquiries </P>
-      <P class="textS"> &#183; Identifying Pain Points </P>
+      <h5 > &#183; Contextual Inquiries </h5>
+      <h5 > &#183; Identifying Pain Points </h5>
     </div>
     <P class="researchArr"></P>
 
     <div class="column centerVer">
-      <P class="centerVer centerHorz colorGreyShadow circleGH  titleL">Ideate </P>
+      <h4 class="centerVer centerHorz colorGreyShadow circleGH  ">Ideate </h4>
       <div class="blankHS"></div>
-      <P class="textS"> &#183; Information Architecture</P>
-      <P class="textS"> &#183; User Flow </P>
-      <P class="textS"> &#183; Selected Initial Concepts </P>
+      <h5 > &#183; Information Architecture</h5>
+      <h5 > &#183; User Flow </h5>
+      <h5 > &#183; Selected Initial Concepts </h5>
     </div>
     <P class="researchArr"></P>
     <div class="column centerVer">
-      <P class="centerVer centerHorz colorGreyShadow circleGH  titleL">Prototype
-      </P>
+      <h4 class="centerVer centerHorz colorGreyShadow circleGH  ">Prototype
+      </h4>
       <div class="blankHS"></div>
 
-      <P class="textS"> &#183; Prototyping </P>
-      <P class="textS"> &#183; Iteration Testing</P>
+      <h5 > &#183; Prototyping </h5>
+      <h5 > &#183; Iteration Testing</h5>
     </div>
     <P class="researchArr"></P>
 
     <div class="column centerVer">
-      <P class="centerVer centerHorz colorGreyShadow circleGH  titleL">Final Design </P>
+      <h4 class="centerVer centerHorz colorGreyShadow circleGH  ">Final Design </h4>
       <div class="blankHS"></div>
 
-      <P class="textS"> &#183; On-boarding</P>
-      <P class="textS"> &#183; Login & Register </P>
-      <P class="textS"> &#183; Content</P>
+      <h5 > &#183; On-boarding</h5>
+      <h5 > &#183; Login & Register </h5>
+      <h5 > &#183; Content</h5>
     </div>
 
 
@@ -389,7 +386,7 @@
   <!--design thinking process-->
 
   <!-- 01 -->
-  <div class="marginAll marginAll">
+  <div class="wrapper">
     <P class="textNos colorGH">01</P>
     <div class="rowChng centerVer">
       <div class="column">
@@ -1066,7 +1063,7 @@
   <div class="blankHXL"></div>
 
   <!-- 02 -->
-  <div class="marginAll marginAll">
+  <div class="wrapper ">
     <P class="textNos colorGH">02</P>
     <div class="rowChng centerVer">
       <div class="column">
@@ -1107,7 +1104,7 @@
   <div class="blankHM"></div>
   <div class="colorGHBg1 align-bottom">
 
-    <div class="marginAll marginAll rowChng centerHorz">
+    <div class="wrapper  rowChng centerHorz">
 
       <div class="column centerVer colorGreyShadow border-radius heightM widthS marginIcon float ">
         <img class="widthLogo paddingS" src="icon_ci_1.svg" alt="User Research">
@@ -1143,7 +1140,7 @@
     </div>
   </div>
   <div class="blankHXL"></div>
-  <div class="marginAll marginAll">
+  <div class="wrapper ">
     <div class="rowChng centerVer">
       <div class="column">
         <P class="titleM">Key Findings from the Contextual Inquiries </P>
@@ -1259,7 +1256,7 @@
 
     <div class="column">
       <P class="titleM centerHorz paddingL">Affinity Mapping Pain Points </P>
-      <img class="" src="affinity_mapping1.svg" alt="User Research">
+      <img  src="affinity_mapping1.svg" alt="User Research">
     </div>
     <div class="blankHL"></div>
 
@@ -1268,13 +1265,13 @@
         similar notes
 
       </P>
-      <img class="" src="affinity_mapping2.svg" alt="User Research">
+      <img  src="affinity_mapping2.svg" alt="User Research">
     </div>
     <div class="blankHL"></div>
 
     <div class="column">
       <P class="titleM centerHorz paddingL">Prioritise and label pain points </P>
-      <img class="" src="affinity_mapping3.svg" alt="User Research">
+      <img  src="affinity_mapping3.svg" alt="User Research">
     </div>
   </div>
 
@@ -1283,7 +1280,7 @@
   <!-- 03 IDEATION -->
 
   <P class="textNos colorGH">03</P>
-  <div class="marginAll marginAll">
+  <div class="wrapper ">
 
     <div class="rowChng centerVer">
       <div class="column">
@@ -2592,7 +2589,7 @@
   <div class="blankHL"></div>
 
   <!-- initial concepts -->
-  <div class="marginAll marginAll column">
+  <div class="wrapper column">
     <P class="titleM">PURPOSE OF THE APP </P>
     <div class="blank-lineheight-s"></div>
 
@@ -2611,7 +2608,7 @@
   <div class="blankHL"></div>
 
 
-  <div class="marginAll marginAll rowChng ">
+  <div class="wrapper rowChng ">
     <div class="column centerVer colorGreyShadow border-radius heightL widthS marginIcon float">
       <img class="widthLogo paddingS" src="icon_concepts1.svg" alt="User Research">
       <P class="lineHorizSmallAMGH"> </P>
@@ -2659,7 +2656,7 @@
   <!-- 03 -->
 
   <!-- 04 -->
-  <div class="marginAll marginAll">
+  <div class="wrapper ">
     <P class="textNos colorGH">04</P>
 
     <div class="rowChng centerVer">
@@ -2727,7 +2724,7 @@
 
   <!-- wireframes mid-fi -->
 
-  <P class="titleM marginAll marginAll">MID-FIDELITY WIREFRAMES </P>
+  <P class="titleM wrapper">MID-FIDELITY WIREFRAMES </P>
   <div class="blankHL"></div>
 
   <div class="carouselGH">
@@ -2818,7 +2815,7 @@
   <div class="colorGHBg">
 
     <div class="blankHM"></div>
-    <div class="marginAll">
+    <div class="wrapper">
       <P class="titleM ">HIGH-FIDELITY WIREFRAMES </P>
       <div class="blankHM"></div>
 

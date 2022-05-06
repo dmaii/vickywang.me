@@ -41,6 +41,8 @@ h1, h2 {
     font-family: inherit;
     font-weight: 500;
     margin: 1em 0;
+
+
 }
 
 .noMargin {
@@ -57,34 +59,34 @@ h3, h4 {
 h5, h6 {
     font-family: inherit;
     font-weight: 300;
-    color: var(--grey-darkest);
+    color: var(--grey-dark);
     margin: 0.2em 0;
 
 }
 
-h1 {
+body h1 {
     font-weight: 500;
 
     font-size: 2em;
 }
 
-h2 {
+body h2 {
     font-size: 1.8em;
 }
 
-h3 {
+body h3 {
     font-size: 1.5em;
 }
 
-h4 {
+body h4 {
     font-size: 1.3em;
 }
 
-h5 {
+body h5 {
     font-size: 1em;
 }
 
-h6 {
+body h6 {
     font-size: 0.8em;
 }
 
@@ -293,51 +295,6 @@ button.passwordArr {
 
 /* ---- password textbox --------- */
 
-/* accordion */
-.accordion {
-    background-color: var(--grey-lightest);
-    border-bottom: 1px solid var(--grey-light);
-
-    outline: none;
-    text-align: left;
-    padding: 15px 20px;
-    color: var(--black);
-    cursor: pointer;
-    transition: background-color 0.2s linear;
-}
-
-.accordion:after {
-    content: "";
-    background-image: url("arrow-accordion-up.svg");
-    height: 36px;
-    width: 36px;
-    float: right;
-}
-
-.accordion.is-open:after {
-    content: "";
-    background-image: url("arrow-accordion-down.svg");
-}
-
-.accordion:hover,
-.accordion.is-open {
-    border: 1px solid var(--grey-light);
-
-    background-color: var(--grey-light);
-}
-
-.accordion-content {
-    background-color: var(--grey-lightest);
-    border-left: 1px solid var(--grey-lightest);
-    border-right: 1px solid var(--grey-lightest);
-    padding: 0 20px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-in-out;
-}
-
-
-/* accordion */
 .element:after {
     content: "";
     display: block;
@@ -446,8 +403,7 @@ button.passwordArr {
 
 /* changed media query from 800 to 1000*/
 
-@media all and (max-width: 1080px) {
-
+@media all and (max-width: 1000px) {
     .navigation {
         justify-content: space-around;
     }
@@ -1112,7 +1068,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 26px 16px;
+    padding: 20px 16px;
     background: var(--white);
 
     border-radius: 3px;

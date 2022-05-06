@@ -218,9 +218,11 @@ a.nav-link:hover {
     /* title */
     --grey: #858585;
     /* text */
-    --grey-lightest: #f8f8f8;
+    --grey-darkest: #909090;
+    --grey-dark: #c8c8c8;
+    --grey-normal: #e4e4e4;
     --grey-light: #efefef;
-    --grey-x: #eeeeee;
+    --grey-lightest: #f8f8f8;
 
     --white: #ffffff;
     --green: #296448;
