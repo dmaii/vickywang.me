@@ -3,7 +3,6 @@
     --white: #ffffff;
     --alert: #CC3300;
     --black: #181818;
-    /* title */
 
     --grey-darkest: #909090;
     --grey-dark: #c8c8c8;
@@ -12,15 +11,15 @@
     --grey-lightest: #f8f8f8;
 
 
+    --green: #296448;
+    --green-light: #D6E2E4;
 
 
-    /* text */
 
 
 
     /* projects */
     --AMBlue: #5384ED;
-    --green: #296448;
     ---testing-hover: #e4fff3;
     --testing: #eff4ff;
 
@@ -32,10 +31,6 @@ body {
     font-family: 'Lato', sans-serif;
     color: var(--black);
 }
-
-
-
-
 
 h1, h2 {
     font-family: inherit;
@@ -146,26 +141,23 @@ hr {
 
 /* element = demo */
 .elementCard {
-    padding: 0.8em 1em 0;
-    margin-bottom: 1em;
-    background: var(--grey-lightest);
-    transition: background-color 0.3s ease;
-    border: 1px solid var(--grey-light);
+    padding: 0;
+    margin: 0;
     border-radius: 3px;
+    /*  
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
 
     opacity: 0.7;
-    filter: alpha(opacity=70);
+    filter: alpha(opacity=70); */
 }
 
-
 .elementCard:hover {
-    background: var(--grey-light);
     cursor: pointer;
-    border: 1px solid var(--grey-normal);
-
-
-    opacity: 1.0;
-    filter: alpha(opacity=100);
+    border-bottom: 5px solid var(--green);
+    transition: all 0.25s ease-in;
+    /*  opacity: 1.0;
+    filter: alpha(opacity=100);*/
 }
 
 
@@ -177,6 +169,13 @@ hr {
     transition: background-color 0.3s ease;
     border-radius: 3px;
 
+}
+
+
+.elementInner {
+    padding: 2em;
+    transition: background-color 0.3s ease;
+    border-radius: 3px;
 }
 
 /* ---- password --------- */
@@ -201,6 +200,7 @@ hr {
 /* relevant styles */
 .img__wrap {
     position: relative;
+    width: 100%;
 
 }
 
@@ -231,19 +231,18 @@ hr {
 .input-field {
     position: absolute;
     top: 43%;
-    left: 30%;
+    left: 32%;
     width: 100%;
     text-align: center;
-
     font-size: 18px;
-    width: 350px;
+    width: 22em;
 
 }
 
 input {
     width: 100%;
     height: 50px;
-    padding: 0 10px;
+    padding: 0 16px;
     background: var(--white);
     border: 1px solid var(--black);
     font-size: 15px;
@@ -270,7 +269,7 @@ input {
 
 button.passwordArr {
     padding: 0;
-    margin-top: -40px;
+    margin-top: -42px;
 }
 
 .pwIncorrectHeight {
@@ -447,13 +446,21 @@ button.passwordArr {
 /* changed media query from 800 to 1000*/
 
 @media all and (max-width: 1080px) {
+    body .input-field {
+        top: 38%;
+        left: 25%;
+        width: 16em;
+    }
 
     .navigation {
         justify-content: space-around;
     }
 
+
+
+
     body .wrapper {
-        margin: 0 2em;
+        margin: 0 1em;
     }
 
 
@@ -560,7 +567,7 @@ button.passwordArr {
 
     body .t-hi {
         font-family: 'Lato', sans-serif;
-        font-size: 3rem;
+        font-size: 2.2rem;
     }
 
     body .t-me {
@@ -584,16 +591,22 @@ button.passwordArr {
 
 
 
-    /* hamburger menu*/
+    /* hamburger menu 1080px*/
 
     body .hamburger {
         display: block;
-        padding: 1.5em;
+        padding: 2em;
         width: 2em;
     }
 
-    .logo {
-        padding: 0.5em;
+    body .logo {
+        padding: 1em;
+    }
+
+    .header {
+        background: rgba(255, 255, 255, 1);
+        /*  10% opaque green */
+
     }
 
     .active .bar:nth-child(2) {
@@ -628,15 +641,17 @@ button.passwordArr {
         align-items: center;
         position: fixed;
         top: 15em;
-        right: -100%;
+        right: -112%;
         -webkit-transition: 0.5s;
         transition: 0.5s;
         margin: 0;
+
     }
 
-    .nav-item {
-        padding-left: 2em !important;
 
+    .nav-item {
+        padding-left: 5em !important;
+        background-color: var(--white);
     }
 
     .nav-menu li {
@@ -648,13 +663,25 @@ button.passwordArr {
         justify-content: flex-start;
         border-bottom: 1px solid var(--grey-lightest);
     }
+    body .navbar:hover .box {
+        opacity: 1;
+        filter: blur(0px);
+        transform: scale(1);
+        
+    }
+    body .navbar:hover .box:hover {
+        transform: scale(1);
+        filter: blur(0px);
+        opacity: 1;
 
-
+    }
     a.nav-link {
         margin: 1rem 0;
         color: #333;
         z-index: 1;
     }
+
+
 
     .active {
         right: 0;
@@ -675,9 +702,27 @@ button.passwordArr {
 
 
 @media all and (max-width: 600px) {
+    body .wrapper {
+        margin: 0;
+    }
+
+    body .input-field {
+        top: 18%;
+        left: -8%;
+        width: 14em;
+    }
+
     body .elementCard {
         opacity: 1.0;
         filter: alpha(opacity=100);
+    }
+
+    body .logo {
+        padding: 0.7em;
+    }
+
+    body .hamburger {
+        padding: 1.7em;
     }
 
     body .se-arrow {
@@ -700,11 +745,11 @@ button.passwordArr {
     }
 
     body .progress__item:after {
-        left: -3.2rem;
+        left: -2.2rem;
     }
 
     body .progress__item:before {
-        left: -2.2rem;
+        left: -1.2rem;
         /*line btw dots*/
     }
 
@@ -713,15 +758,8 @@ button.passwordArr {
         margin: 0;
     }
 
-    body .input-field {
-        top: 33%;
-        left: 15%;
-        width: 280px;
-
-    }
-
     body .progress__item {
-        padding-left: 0rem;
+        padding-left: 1.5rem;
     }
 
     .widthCarouselImg {
@@ -743,13 +781,11 @@ button.passwordArr {
     .navigation a {
         text-align: center;
         padding: 10px;
-
     }
 
     .navigation li:last-of-type a {
         border-bottom: none;
     }
-
 }
 
 /*===========================================*/
@@ -1046,11 +1082,7 @@ ul {
     }
 }
 
-
-
-
 /* intro */
-
 /*head tool bar scroll*/
 
 .logo {
@@ -1065,6 +1097,9 @@ ul {
 }
 
 .backgroundColorNav {
+
+
+
     position: fixed;
     top: 0;
     left: 0;
@@ -1075,8 +1110,6 @@ ul {
     height: 5em;
     text-align: center;
     align-items: center;
-
-    opacity: 0.9;
 
     transition: ease 0.4s;
     display: flex;
@@ -1091,7 +1124,8 @@ ul {
     left: 0;
     right: 0;
     margin: 0 auto;
-    background-color: var(--white);
+    background: rgba(255, 255, 255, 0.7);
+    /*  10% opaque green */
     height: 5em;
     border-bottom: 1px solid var(--grey-lightest);
     z-index: 3;
@@ -1113,7 +1147,6 @@ ul {
     align-items: center;
     justify-content: center;
     padding: 26px 16px;
-    background: var(--white);
 
     border-radius: 3px;
     transition: .2s all;
@@ -1220,6 +1253,11 @@ a.nav-link:hover {
     .wrapper {
         margin: 0 1em;
     }
+
+    body .nav-menu {
+        top: 20em;
+    }
+
 }
 
 
@@ -1281,7 +1319,7 @@ a.nav-link:hover {
 }
 
 .cardBorder {
-    border: 4px solid var(--grey-lightest);
+    border: 2px solid var(--grey-lightest);
     border-radius: var(--border-radius);
 }
 
@@ -1358,6 +1396,11 @@ a.nav-link:hover {
 
 .blankProject {
     height: 150px;
+}
+
+.blankHXXS {
+    display: block;
+    height: 0.8rem;
 }
 
 .blankHXS {
@@ -1956,6 +1999,7 @@ a.nav-link:hover {
     width: 60vw;
 }
 
+
 .widthXS {
     width: 13rem;
 }
@@ -1981,7 +2025,7 @@ a.nav-link:hover {
 }
 
 .heightS {
-    height: 12rem;
+    height: 14rem;
 }
 
 .heightM {
