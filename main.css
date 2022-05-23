@@ -446,6 +446,18 @@ button.passwordArr {
 /* changed media query from 800 to 1000*/
 
 @media all and (max-width: 1080px) {
+   body .heightS {
+        height: 16rem;
+    }
+    
+    body .heightM {
+        height: 20rem;
+    }
+    
+    body .heightL {
+        height: 30rem;
+    }
+    
     body .input-field {
         top: 38%;
         left: 25%;
@@ -510,9 +522,6 @@ button.passwordArr {
         height: 35px;
     }
 
-    body .heightM {
-        height: auto;
-    }
 
     body .widthL {
         width: auto;
@@ -701,7 +710,20 @@ button.passwordArr {
 
 
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 680px) {
+
+   body .heightS {
+        height: auto;
+    }
+    
+    body .heightM {
+        height: auto;
+    }
+    
+    body .heightL {
+        height: auto;
+    }
+
     body .wrapper {
         margin: 0;
     }
@@ -2007,7 +2029,6 @@ a.nav-link:hover {
 .widthS {
     width: 20rem;
 }
-
 .widthM {
     width: 35rem;
 }
@@ -2029,7 +2050,7 @@ a.nav-link:hover {
 }
 
 .heightM {
-    height: 18rem;
+    height: 16rem;
 }
 
 .heightL {

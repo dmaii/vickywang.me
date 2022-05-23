@@ -7,6 +7,19 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const msg = document.getElementById("pwIncorrect");
   const w = 'U2FsdGVkX19oLUQ5jGSt/8/BznuKKmnoGgwpbQPYIbeXe3qedrMX9ePhdFn9BFIe';
 
+  // Get the input field
+  var input = document.getElementById("password");
+
+  // Execute a function when the user presses a key on the keyboard
+  input.addEventListener("keypress", function(event) {
+    // If the user presses the "Enter" key on the keyboard
+    if (event.key === "Enter") {
+      // Cancel the default action, if needed
+      event.preventDefault();
+      // Trigger the button element with a click
+      submit.click();
+    }
+  });
   submit.addEventListener("click", () => {
     let redirect;
     try {
