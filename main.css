@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     /* Color */
     --white: #ffffff;
@@ -46,14 +50,15 @@ h3, h4 {
     font-family: inherit;
     font-weight: 300;
     color: var(--black);
-    margin: 0.8em, 0;
+    margin: 0.6em 0;
+
 }
 
 h5, h6 {
     font-family: inherit;
     font-weight: 300;
     color: var(--grey-darkest);
-    margin: 0.2em 0;
+    margin: 0.3em 0;
 
 }
 
@@ -69,10 +74,12 @@ h2 {
 
 h3 {
     font-size: 1.5em;
+
 }
 
 h4 {
     font-size: 1.3em;
+
 }
 
 h5 {
@@ -291,6 +298,29 @@ button.passwordArr {
 }
 
 /* ---- password textbox --------- */
+.moveUpDown {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-6px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-6px); }
+}
+
+
+
+
+.arrCard:after {
+    content: "";
+    background-image: url("arrow-card.svg");
+    height: 36px;
+    width: 36px;
+    float: right;
+}
 
 /* accordion */
 .accordion {
@@ -446,23 +476,19 @@ button.passwordArr {
 /* changed media query from 800 to 1000*/
 
 @media all and (max-width: 1080px) {
-   body .heightS {
+    body .heightS {
         height: 16rem;
     }
-    
+
     body .heightM {
         height: 20rem;
     }
-    
+
     body .heightL {
         height: 30rem;
     }
-    
-    body .input-field {
-        top: 38%;
-        left: 25%;
-        width: 16em;
-    }
+
+
 
     .navigation {
         justify-content: space-around;
@@ -672,18 +698,21 @@ button.passwordArr {
         justify-content: flex-start;
         border-bottom: 1px solid var(--grey-lightest);
     }
+
     body .navbar:hover .box {
         opacity: 1;
         filter: blur(0px);
         transform: scale(1);
-        
+
     }
+
     body .navbar:hover .box:hover {
         transform: scale(1);
         filter: blur(0px);
         opacity: 1;
 
     }
+
     a.nav-link {
         margin: 1rem 0;
         color: #333;
@@ -699,7 +728,13 @@ button.passwordArr {
     }
 
     /* hamburger menu*/
+    body .input-field {
+        top: 38%;
+        left: 30%;
+        width: 16em;
+    }
 
+    /* password */
 
 }
 
@@ -712,14 +747,15 @@ button.passwordArr {
 
 @media all and (max-width: 680px) {
 
-   body .heightS {
+
+    body .heightS {
         height: auto;
     }
-    
+
     body .heightM {
         height: auto;
     }
-    
+
     body .heightL {
         height: auto;
     }
@@ -728,9 +764,10 @@ button.passwordArr {
         margin: 0;
     }
 
+
     body .input-field {
-        top: 18%;
-        left: -8%;
+        top: 33%;
+        left: 16%;
         width: 14em;
     }
 
@@ -980,7 +1017,7 @@ ul {
     list-style-type: circle;
     font-family: inherit;
     font-weight: 300;
-    color: var(--grey-dark);
+    color: var(--grey-darkest);
     list-style-position: outside;
     margin-left: 0;
     padding-left: 20px;
@@ -1119,9 +1156,6 @@ ul {
 }
 
 .backgroundColorNav {
-
-
-
     position: fixed;
     top: 0;
     left: 0;
@@ -1268,6 +1302,11 @@ a.nav-link:hover {
         padding: 0.75rem 0;
     }
 
+    body .nav-item {
+        padding-left: 2.5em !important;
+        background-color: var(--white);
+    }
+
     body .widthL {
         width: 22em;
     }
@@ -1278,6 +1317,12 @@ a.nav-link:hover {
 
     body .nav-menu {
         top: 20em;
+    }
+
+    body .input-field {
+        top: 23%;
+        left: 0;
+        width: 14em;
     }
 
 }
@@ -1356,7 +1401,7 @@ a.nav-link:hover {
 }
 
 .shadowFilter {
-    filter: drop-shadow(15px 10px 15px rgba(143, 143, 143, 0.404));
+    filter: drop-shadow(3px 2px 2px rgba(143, 143, 143, 0.404));
 }
 
 .clip-shape-shadow {
@@ -1598,24 +1643,7 @@ a.nav-link:hover {
     border-radius: 50%;
 }
 
-/* Geometry*/
 
-.tArrow {
-    font-size: 1.8em;
-    font-weight: 100;
-    margin: 2px 0px;
-}
-
-.se-arrow {
-    width: 1.6em;
-    height: auto;
-    margin-left: 1%;
-}
-
-.carouselArrow {
-    width: 2.8em;
-
-}
 
 
 
@@ -1676,7 +1704,7 @@ a.nav-link:hover {
     /* weight */
     border-top: 80px solid black;
     /* height */
-    margin: 0px;
+    margin: 0 2em;
 }
 
 .divider1 {
@@ -1686,7 +1714,7 @@ a.nav-link:hover {
     /* weight */
     border-top: 40px solid black;
     /* height */
-    margin: 0;
+    margin: 0 2em;
 }
 
 .introVer {
@@ -1991,6 +2019,24 @@ a.nav-link:hover {
 
 /* margin anf padding*/
 
+.tArrow {
+    font-size: 1.8em;
+    font-weight: 100;
+    margin: 2px 0px;
+}
+
+.se-arrow {
+    width: 1.6em;
+    height: auto;
+    margin-left: 1%;
+}
+
+.carouselArrow {
+    width: 2.8em;
+
+}
+/* Geometry*/
+
 /* width and height */
 
 .widthIconS {
@@ -2029,6 +2075,7 @@ a.nav-link:hover {
 .widthS {
     width: 20rem;
 }
+
 .widthM {
     width: 35rem;
 }
