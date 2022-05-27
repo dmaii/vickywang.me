@@ -1,7 +1,3 @@
-html {
-    scroll-behavior: smooth;
-}
-
 :root {
     /* Color */
     --white: #ffffff;
@@ -35,6 +31,96 @@ body {
     font-family: 'Lato', sans-serif;
     color: var(--black);
 }
+.positionAbl{
+    position: absolute;
+    margin: 0;
+    width:100%;
+}
+/* 1. Enable smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 2. Make nav sticky */
+main>nav {}
+
+/* 3. ScrollSpy active styles (see JS tab for activation) */
+.section-nav li.active>a {
+    color: #333;
+    font-weight: 500;
+}
+
+/* Sidebar Navigation */
+@media all and (min-width: 1880px) {
+    body .section-nav {
+        right: 20em;
+        top: 28rem;
+
+    }
+}
+
+.section-nav {
+    z-index: 99;
+    padding-left: 0;
+    border-left: 1px solid #efefef;
+
+    position: fixed;
+    right: 3em;
+    top: 18rem;
+
+}
+
+.section-nav a {
+    text-decoration: none;
+    display: block;
+    padding: .125rem 0;
+    color: var(--grey-darkest);
+    transition: all 50ms ease-in-out;
+    /* 💡 This small transition makes setting of the active state smooth */
+}
+
+.section-nav a:hover,
+.section-nav a:focus {
+    color: var(--green);
+}
+
+/** Poor man's reset 
+* {
+    box-sizing: border-box;
+}
+**/
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-left: 1rem;
+}
+
+ul {
+    list-style-type: circle;
+    font-family: inherit;
+    font-weight: 300;
+    color: var(--grey-darkest);
+    list-style-position: outside;
+    margin-left: 0;
+    padding-left: 20px;
+}
+
+/** page layout **/
+main {}
+
+/** enlarge the sections for this demo, so that we have a long scrollable page **/
+section {
+    padding-top: 8em;
+}
+
+
+
+
 
 h1, h2 {
     font-family: inherit;
@@ -299,16 +385,28 @@ button.passwordArr {
 
 /* ---- password textbox --------- */
 .moveUpDown {
-    -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 1s infinite  alternate;
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
 }
+
 @-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-6px); }
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-6px);
+    }
 }
+
 @keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-6px); }
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-6px);
+    }
 }
 
 
@@ -488,7 +586,10 @@ button.passwordArr {
         height: 30rem;
     }
 
+    body .section-nav {
+        display: none;
 
+    }
 
     .navigation {
         justify-content: space-around;
@@ -931,8 +1032,10 @@ button.passwordArr {
 }
 
 
-/* Large screens */
+/* when the screens more than an ipad */
 @media (min-width: 48em) {
+
+
     .Grid--cols-2>.Grid-cell, .Grid--cols-3>.Grid-cell, .Grid--cols-4>.Grid-cell, .Grid--cols-6>.Grid-cell, .Grid--cols-12>.Grid-cell {
         flex: 1;
     }
@@ -1013,15 +1116,7 @@ button.passwordArr {
 
 
 
-ul {
-    list-style-type: circle;
-    font-family: inherit;
-    font-weight: 300;
-    color: var(--grey-darkest);
-    list-style-position: outside;
-    margin-left: 0;
-    padding-left: 20px;
-}
+
 
 /*progressStepTracker*/
 
@@ -1145,6 +1240,8 @@ ul {
 /*head tool bar scroll*/
 
 .logo {
+    padding: 1em;
+
     font-size: 2rem;
     font-weight: 500;
     /* margin-right: 8%; */
@@ -2035,6 +2132,7 @@ a.nav-link:hover {
     width: 2.8em;
 
 }
+
 /* Geometry*/
 
 /* width and height */
@@ -2622,14 +2720,12 @@ button {
 }
 
 .textL {
-    color: #858585;
     font-size: 1.8em;
     font-weight: 300;
     margin: 2px 0;
 }
 
 .textM {
-    color: #858585;
     font-size: 1.5em;
     font-weight: 300;
     line-height: 1.6;
@@ -2637,7 +2733,6 @@ button {
 }
 
 .textS {
-    color: #858585;
     font-size: 1.3em;
     font-weight: 300;
     margin: 5px 0;
