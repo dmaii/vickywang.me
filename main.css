@@ -57,12 +57,17 @@ main>nav {}
         top: 28rem;
 
     }
+    body .logo {
+        padding: 0.5em;
+    }
 }
 
 .section-nav {
+    background-color: var(--white);
+    opacity: 0.8;
     z-index: 99;
     padding-left: 0;
-    border-left: 1px solid #efefef;
+    border-left: 1px solid var(--grey-light);
 
     position: fixed;
     right: 3em;
@@ -115,7 +120,7 @@ main {}
 
 /** enlarge the sections for this demo, so that we have a long scrollable page **/
 section {
-    padding-top: 8em;
+    padding-top: 5em;
 }
 
 
@@ -136,7 +141,7 @@ h3, h4 {
     font-family: inherit;
     font-weight: 300;
     color: var(--black);
-    margin: 0.6em 0;
+    margin: 0.8em 0;
 
 }
 
@@ -144,7 +149,7 @@ h5, h6 {
     font-family: inherit;
     font-weight: 300;
     color: var(--grey-darkest);
-    margin: 0.3em 0;
+    margin: 0.6em 0;
 
 }
 
@@ -362,7 +367,7 @@ input {
 
 button.passwordArr {
     padding: 0;
-    margin-top: -42px;
+    margin-top: -2em;
 }
 
 .pwIncorrectHeight {
@@ -1569,7 +1574,7 @@ a.nav-link:hover {
 
 .blankHXS {
     display: block;
-    height: 2rem;
+    height: 1.2rem;
 }
 
 .blankHS {
