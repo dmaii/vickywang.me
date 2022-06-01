@@ -1,0 +1,608 @@
+<html lang="en">
+
+
+<head>
+  <link rel="stylesheet" href="../../../main.css">
+
+  <script type="text/javascript" src="../scripts.js"></script>
+
+
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <!--font     font-family: 'Titillium Web', sans-serif; -->
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!--font     font-family: 'Roboto', sans-serif; -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+  <!--font using hello-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!--font     font-family: 'Catamaran', sans-serif; -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!--font font-family: 'Lato', sans-serif; -->
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet">
+  <!--font awesome -->
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+    integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- crypto js -->
+
+  <script type="text/javascript"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <!--jQuery-->
+  <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!--aos-->
+  <script type="text/javascript"
+    src="https://assets.codepen.io/16327/gsap-latest-beta.min.js"></script>
+  <!-- gsap -tool-bar-->
+  <script type="text/javascript"
+    src="https://assets.codepen.io/16327/ScrollTrigger.min.js?v=40"></script>
+  <!-- gsap - tool-bar-->
+
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <!-- gsap - ScrollTrigger-->
+  <script type="text/javascript" src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <!-- gsap - ScrollTrigger-->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8YXDWJST2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-E8YXDWJST2');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Vicky Wang - Product Designer</title>
+  <meta name="description" content="Vicky Wang's Portfolio">
+  <meta name="keywords"
+    content="Vicky Wang, Product Design, Product Designer, UI/UX Designer, Designer, Architecture, Architect, San Francisco, UC Berkeley">
+  <meta name="author" content="Vicky Wang">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:site_name" content="VICKY WANG">
+  <meta property="og:url" content="/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="VICKY WANG" />
+  <meta property="og:description" content="Hi! Thanks for stopping by. 
+    I enjoy design and code who loves solving challenging problems. 
+    Interested in what you see? Shoot me an email :) " />
+  <meta property="og:image"
+    content="https://s3.us-west-1.amazonaws.com/vickywang.me/thumbnail.jpg" />
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="750">
+  <meta property="og:image:height" content="750">
+
+  <meta name="twitter:url" content="//vickywang.design">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="VICKY WANG" />
+  <meta name="twitter:creator" content="VICKY WANG" />
+  <meta property="twitter:title" content="VICKY WANG">
+  <meta property="twitter:description"
+    content="Hi! Thanks for stopping by. I’m a product designer based in San Francisco. I'm a former architectural designer with a passion for solving business challenges through design and occasionally code. If you like what you see here, please feel free to reach out to me at vickyw.design@gmail.com :)">
+  <meta name="twitter:image" content="//s3-us-west-1.amazonaws.com/vickywang.design/thumbnail.jpg">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="750">
+  <meta property="og:image:height" content="750">
+</head>
+
+<body>
+  <!--progressBarScroll-->
+  <div class="progressContainer">
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+  </div>
+  <!--progressBarScroll-->
+  <!--header-->
+  <nav class="header">
+    <div class="backgroundColorNav">
+      <a href="http://vickywang.me/" class="logo pointer">VW </a>
+      <div class="navbar">
+        <h3>
+          <a href="/worksamples/xbbswsandcpif/" class="box widthXS textUnderline">
+            <img class="se-arrow" src="../../../icon/arrow-back.svg" alt="back to"> BYP APP
+          </a>
+        </h3>
+      </div>
+    </div>
+  </nav>
+  <!--header-->
+  <div class="blankHM"></div>
+
+  <!-- Title -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--1of2 Grid--center u-textCenter">
+      <div class="Grid-cell">
+        <div class="element">
+          <img class="ShadowBox" src="../images/userFlow.jpg"alt="Flow iteration history">
+
+          <h1 class="Grid Grid--center"> Flow iteration history</h1>
+          <h5 class="textItalic">UI/UX Designer from October 2021 to Present</h5>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Title -->
+  <main class="">
+    <nav class="section-nav">
+      <ol>
+        <li><a href="#addService">Add service</a>
+          <ul>
+            <li class=""><a href="#addServiceV1">V1</a></li>
+            <li class=""><a href="#addServiceV2">V2</a></li>
+          </ul>
+        </li>
+        <li><a href="#competitor">Client management </a></li>
+
+        <li><a href="#promotion"> Promotion</a>
+        <li class=""><a href="#promotionV1">V1</a></li>
+        <li class=""><a href="#promotionV2">V2</a></li>
+        </li>
+        <li><a href="#bookAppointment">Book appointment </a>
+          <ul>
+            <li class=""><a href="#interview">V1</a></li>
+            <li class=""><a href="#journey">V2</a></li>
+          </ul>
+        </li>
+        <li><a href="#appointmentStatus">Appointment status </a>
+      </ol>
+    </nav>
+
+    <div class="blankHL"></div>
+    <section id="addService">
+      <!-- Title -->
+      <div class="wrapper">
+        <div class="Grid Grid--gutters Grid--1of2 Grid--center u-textCenter">
+          <div class="Grid-cell">
+            <div class="element">
+              <h1 class="Grid Grid--center"> <span>Services esearch</span><img
+                  class="moveUpDown widthLogo" src="../../../icon/icon_CurrentState.svg" alt="Redesign">
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Title -->
+      <div class="blankHS"></div>
+      <section id="interview">
+        <!-- Arrow -->
+        <div class="wrapper">
+          <div class="Grid Grid--gutters Grid--1of1 Grid--full Grid--nested">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="Grid">
+                  <p class="tArrow"> User interview</p>
+                  <img class="se-arrow" src="../../../icon/arrow-se.svg" alt="se-arrow">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Arrow -->
+        <!-- interview -->
+        <div class="">
+          <div class="Grid Grid--full u-textCenter">
+            <div class="Grid-cell">
+              <img class="" src="../../../Placeholder.svg" alt="Pain points">
+              <h5> This is the sitemap when I joined BYP. user flow updates mostly focus on the
+                calendar and service.</h5>
+
+            </div>
+          </div>
+        </div>
+        <!-- interview  -->
+      </section>
+      <section id="journey">
+        <!-- Arrow -->
+        <div class="wrapper">
+          <div class="Grid Grid--gutters Grid--1of1 Grid--full Grid--nested">
+            <div class="Grid-cell">
+              <div class="element">
+                <div class="Grid">
+                  <p class="tArrow"> User journey</p>
+                  <img class="se-arrow" src="../../../icon/arrow-se.svg" alt="se-arrow">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Arrow -->
+        <!-- interview -->
+        <div class="">
+          <div class="Grid Grid--full u-textCenter">
+            <div class="Grid-cell">
+              <img class="" src="../../../Placeholder.svg" alt="Pain points">
+              <h5> This is Placeholder for user journey map.</h5>
+
+            </div>
+          </div>
+        </div>
+        <!-- interview  -->
+      </section>
+    </section>
+    <section id="competitor">
+      <!-- Features -->
+      <div class="wrapper">
+        <div class="Grid Grid--gutters Grid--1of1 Grid--full Grid--nested">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="Grid">
+                <p class="tArrow"> Competitor research</p>
+                <img class="se-arrow" src="../../../icon/arrow-se.svg" alt="se-arrow">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blankHS"></div>
+      <div class="wrapper">
+        <div class="Grid Grid--full">
+          <div class="Grid-cell">
+            <div class="element">
+              <h4 class="accordion noMargin">Book Appointment</h4>
+              <div class="accordion-content">
+                <ul class="element">
+                  <li>Service information</li>
+                  <li>Team member availability</li>
+                  <li>Payment</li>
+                </ul>
+                <div class="blankHXS"></div>
+              </div>
+              <h4 class="accordion noMargin">Service Management</h4>
+              <div class="accordion-content">
+                <ul class="element">
+                  <li> Add service </li>
+                  <li> Add location</li>
+                  <li> Select categoty & service type</li>
+                  <li> Assign to team member</li>
+                  <li> Add capacity</li>
+                  <li> Add price</li>
+                  <li> Add duration</li>
+                </ul>
+                <div class="blankHXS"></div>
+              </div>
+
+
+              <h4 class="accordion noMargin">Team Member</h4>
+              <div class="accordion-content">
+                <ul class="element">
+                  <li>Team member information </li>
+                  <li>Location </li>
+                  <li>Availability </li>
+                </ul>
+                <div class="blankHXS"></div>
+              </div>
+              <h4 class="accordion noMargin">Client Management</h4>
+              <div class="accordion-content">
+                <ul class="element">
+                  <li> Send message </li>
+                  <li> Client list upload</li>
+                  <li> Bulk edit </li>
+                  <li> Send message </li>
+                  <li> Filter </li>
+
+                </ul>
+                <div class="blankHXS"></div>
+              </div>
+
+              <h4 class="accordion noMargin">Location</h4>
+              <div class="accordion-content">
+                <ul class="element">
+                  <li> Mobile location</li>
+                  <li> Hour of operation </li>
+                  <li> Edit</li>
+                  <li> Turn on/off</li>
+
+                </ul>
+                <div class="blankHXS"></div>
+              </div>
+              <h4 class="accordion noMargin">Marketing</h4>
+              <div class="accordion-content">
+                <ul class="element">
+                  <li> Promotion </li>
+                  <li> Membership </li>
+                  <li> Punch pass </li>
+                </ul>
+                <div class="blankHXS"></div>
+              </div>
+              <h4 class="accordion noMargin">Setting</h4>
+              <div class="accordion-content">
+                <ul class="element">
+                  <li> Integration </li>
+                  <li> Holiday calendar</li>
+                  <li> Questionnaire</li>
+                </ul>
+                <div class="blankHXS"></div>
+              </div>
+              <h4 class="accordion noMargin">Check-in</h4>
+              <div class="accordion-content">
+                <ul class="element">
+                  <li> Filter</li>
+                  <li> Appointment status</li>
+                  <li> </li>
+                </ul>
+                <div class="blankHXS"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Features -->
+    </section>
+    <div class="blankHM"></div>
+    <hr>
+    <div class="blankHM"></div>
+    <section id="promotion">
+      <!-- Main Taskes -->
+      <div class="wrapper">
+        <div class="Grid Grid--gutters Grid--1of1 Grid--full Grid--nested">
+          <div class="Grid-cell">
+            <div class="element">
+              <div class="Grid">
+                <p class="tArrow">Calendar and booking</p>
+                <img class="se-arrow" src="../../../icon/arrow-se.svg" alt="se-arrow">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blankHS"></div>
+      <div class="wrapper">
+        <div class="Grid Grid--gutters Grid--1of2 Grid--center Grid--nested u-textCenter">
+          <div class="Grid-cell">
+            <div class="Grid Grid--gutters Grid--cols-6 Grid--nested">
+              <div class="Grid-cell">
+                <div class="element ">
+                  <h3> 50% </h3>
+                  <h5> xxx</h5>
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element ">
+                  <h3> 30% </h3>
+                  <h5> xxx</h5>
+                </div>
+              </div>
+              <div class="Grid-cell">
+                <div class="element ">
+                  <h3> 20% </h3>
+                  <h5> xxx</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="blankHS"></div>
+        <div class="Grid Grid--gutters Grid--cols-3">
+          <div class="Grid-cell ">
+            <div class="element ">
+              <div class="elementInner ShadowBox ">
+                <h3>xxx</h3>
+                <div class="lineHorizS"></div>
+                <div class="blankHXS"></div>
+                <ul>
+                  <li> Simplify current user flow</li>
+                  <li> Adding new features</li>
+                  <li> Updating existion features </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="Grid-cell ">
+            <div class="element">
+              <div class="elementInner ShadowBox ">
+                <h3>xxx </h3>
+                <div class="lineHorizS"></div>
+                <div class="blankHXS"></div>
+                <ul>
+                  <li> Creating Mockups in Figma</li>
+                  <li> Updating Mockups base on the feedback</li>
+                  <li> Share mockups with dev team</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="Grid-cell ">
+            <div class="element">
+              <div class="elementInner ShadowBox ">
+                <h3>xxx </h3>
+                <div class="lineHorizS"></div>
+                <div class="blankHXS"></div>
+                <ul>
+                  <li>Interview users with stakeholder</li>
+                  <li>Summarize interview result </li>
+                  <li>create user flow diagrams</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Main Taskes -->
+    </section>
+    <section id="bookAppointment">
+      <!-- takeaways -->
+      <div class="Grid Grid--full u-textCenter wrapper">
+        <div class="Grid-cell">
+          <h3 class="element">Key takeaways</h3>
+          <h5>Clear product vision is the key. Maybe we should try to only solve trainer's problem,
+            then
+            we can design another flow</h5>
+          <h5>Only building the features is important for MVP, less is more</h5>
+          <h5>More features can be added after launch, get user feedback first </h5>
+          <h5>Doing research and design before implement</h5>
+        </div>
+      </div>
+      <!-- takeaways -->
+    </section>
+  </main>
+  <div class="blankHM"></div>
+  <hr>
+  <div class="blankHM"></div>
+  <!-- Arrow -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--1of1 Grid--full Grid--nested">
+      <div class="Grid-cell">
+        <div class="element">
+          <div class="Grid">
+            <p class="tArrow"> Link to other pages</p>
+            <img class="se-arrow" src="../../../icon/arrow-se.svg" alt="se-arrow">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Arrow -->
+  <div class="blankHS"></div>
+  <!-- Services -->
+  <div class="wrapper">
+    <div class="Grid Grid--gutters Grid--cols-3">
+      <div class="Grid-cell">
+        <a href="/worksamples/xbbswsandcpif/">
+          <div class="element">
+            <div class="elementCard float ShadowBox">
+              <img src="../../xbbswsandcpif/images/BYP.jpg" alt="Work Samples">
+              <div class="Grid">
+                <div class="elementInner">
+                  <h5>About BookYourPet App</h5>
+                  <h3 class="arrCard">Web App</h3>
+                  <h5> <strong>Current state, redesign process, usability testing,
+                      iteration</strong> </h5>
+                  <ul>
+                    <li> Working progress of user flows and mockups</li>
+                    <li> Iteration of user flows</li>
+                    <li> Features update including combine the existing flow and features, and
+                      introduce new features required by stakeholders</li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="Grid-cell">
+        <a href="/worksamples/xbbswsandcpif/company">
+          <div class="element">
+            <div class="elementCard float ShadowBox">
+              <img src="../images/pet2.jpg" alt="Work Samples">
+              <div class="Grid">
+                <div class="elementInner">
+                  <h5>About the company </h5>
+                  <h3 class="arrCard">Vicky at BookYourPet</h3>
+                  <h5> <strong>Team, platforms, business goal, features </strong> </h5>
+                  <ul>
+                    <li>Team & Collaboration </li>
+                    <li>Problems we try to solve </li>
+                    <li>Company and business goal, services we currently have, different services i
+                      have been working on</li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+    </div>
+  </div>
+  <!-- Services -->
+  <div class="blankHM"></div>
+  <hr>
+  <div class="blankHM"></div>
+  <!-- more -->
+  <div class="Grid Grid--full u-textCenter">
+    <div class="Grid-cell">
+      <h5 class="element ">For more information please visit my website </h5>
+      <a href="https://vickywang.me" class="textUnderline" target="_blank">VICKYWANG.ME</a>
+    </div>
+  </div>
+  <div class="blankHM"></div>
+  <!-- more -->
+
+
+
+
+
+
+
+
+
+
+  <!--back to top-->
+
+
+  <botton id="myBtn">
+
+    <div class="Grid Grid--full u-textCenter">
+      <div class="Grid-cell">
+        <img id="bottom-arrow" class="ArrowHover" src="../../../icon/arrow-top.svg" alt="back to top">
+        <div>TOP</div>
+      </div>
+    </div>
+  </botton>
+
+  <!--back to top-->
+
+  <!--footer-->
+  <div class="footer">
+    <p class="footer-left"> &#169; 2022 &#8212; VICKY WANG
+    </p>
+    <div class="footer-right">
+      <a href="mailto:vickyw.design@gmail.com">
+        <img class="footer-logo" src="../../../icon/mail.svg" alt="email">
+      </a>
+
+      <a href="https://www.linkedin.com/in/vicky-wyq/">
+        <img class="footer-logo" src="../../../icon/in.svg" alt="linkedin">
+      </a>
+
+      <a href="https://github.com/vicky-wyq">
+        <img class="footer-logo" src="../../../icon/git.svg" alt="github">
+      </a>
+
+      <a href="https://www.instagram.com/vw_yiqi/">
+        <img class="footer-logo" src="../../../icon/ins.svg" alt="medium">
+      </a>
+    </div>
+  </div>
+
+  <!--footer-->
+
+
+</body>
+
+
+
+
+</html>

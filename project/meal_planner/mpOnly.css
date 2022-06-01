@@ -1985,13 +1985,13 @@ td:nth-child(even) {
 
 /* ul.iconx {
     list-style-position: outside;
-    list-style-image: url('../../list_MP.svg');
+    list-style-image: url('../../icon/list_MP.svg');
     padding: 0;
 } */
 
 ul.iconx {
     list-style-position: outside;
-    list-style-image: url('../../list_MP.svg');
+    list-style-image: url('../../icon/list_MP.svg');
     padding: 0;
 }
 
