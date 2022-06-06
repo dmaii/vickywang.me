@@ -39,7 +39,7 @@
         width: 10rem;
     }
 
-    body .widthIconM {
+    body .IconM {
         width: 4rem;
     }
 
@@ -387,7 +387,7 @@
         margin: 1vh 1vh;
     }
 
-    body .icon-l {
+    body .iconL {
         width: 6vh;
     }
 
@@ -1226,7 +1226,7 @@ body {
 
 /* width and height */
 
-.widthIconS {
+.IconS {
     width: 1.8rem;
     margin: 2px;
 }
@@ -1236,7 +1236,7 @@ body {
     margin: 9px;
 }
 
-.widthIconM {
+.IconM {
     width: 8rem;
     margin-right: 10px;
 }
@@ -1246,7 +1246,7 @@ body {
     margin-right: 10px;
 }
 
-.icon-l {
+.iconL {
     width: 8rem;
 }
 

@@ -2,7 +2,7 @@
     /* Color */
     --white: #ffffff;
     --alert: #CC3300;
-    --black: #262626;
+    --black: #131313;
 
     --grey-darkest: #909090;
     --grey-dark: #c8c8c8;
@@ -1478,7 +1478,7 @@ a.nav-link:hover {
 }
 
 .colorGrey {
-    background-color: #F5F5F5;
+    background-color: var(--grey-lightest);
 }
 
 .tColorAM {
@@ -1497,6 +1497,7 @@ a.nav-link:hover {
 
 .cardBorder {
     border: 2px solid var(--grey-lightest);
+    
     border-radius: var(--border-radius);
 }
 
@@ -2150,35 +2151,26 @@ a.nav-link:hover {
 
 /* width and height */
 
-.widthIconS {
-    width: 1.8rem;
-    margin: 2px;
-}
+
 
 .widthLogo {
     width: 3rem;
     margin: 9px;
 }
-
-.widthIconM {
+.IconS {
+    width: 1.8rem;
+    margin: 2px;
+}
+.IconM_MP_GH {
     width: 8rem;
     margin-right: 10px;
 }
-
-.widthIconL {
-    width: 12rem;
-    margin-right: 10px;
+.iconM {
+    width: 4rem;
 }
-
-.icon-l {
+.iconL {
     width: 8rem;
 }
-
-.widthAll {
-    width: 60vw;
-}
-
-
 .widthXS {
     width: 13rem;
 }

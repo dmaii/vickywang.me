@@ -1884,7 +1884,7 @@ a.nav-link:hover {
 
 /* width and height */
 
-.widthIconS {
+.IconS {
     width: 1.8rem;
     margin: 2px;
 }
@@ -1894,7 +1894,7 @@ a.nav-link:hover {
     margin: 9px;
 }
 
-.widthIconM {
+.IconM {
     width: 8rem;
     margin-right: 10px;
 }
@@ -1904,7 +1904,7 @@ a.nav-link:hover {
     margin-right: 10px;
 }
 
-.icon-l {
+.iconL {
     width: 8rem;
 }
 
