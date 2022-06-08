@@ -55,8 +55,7 @@ main>nav {}
 /* Sidebar Navigation */
 @media all and (min-width: 1880px) {
     body .section-nav {
-        right: 20em;
-        top: 28rem;
+
 
     }
 
@@ -72,9 +71,14 @@ main>nav {}
     padding-left: 0;
     border-left: 1px solid var(--grey-light);
 
-    position: fixed;
-    right: 3em;
+    position: sticky;
+    margin-left:80%;
+
     top: 18rem;
+    width: fit-content;
+
+    padding: 1em 2em 1em 1em;
+
 
 }
 
@@ -1477,10 +1481,15 @@ a.nav-link:hover {
     background-color: #E2EDFD !important;
 }
 
-.colorGrey {
+.colorBgGrey {
     background-color: var(--grey-lightest);
 }
-
+.colorGreen {
+    color: var(--green);
+}
+.colorGrey {
+    color: var(--grey-darkest);
+}
 .tColorAM {
     color: #d9e0f0;
 }
@@ -1500,7 +1509,11 @@ a.nav-link:hover {
     
     border-radius: var(--border-radius);
 }
-
+.cardBorderGreen {
+    border: 1px solid var(--grey-dark);
+    
+    border-radius: var(--border-radius);
+}
 .colorBlue.cardBorder {
     border: 4px solid var(--AMBlue);
     border-radius: var(--border-radius);
