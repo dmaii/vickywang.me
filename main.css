@@ -6,6 +6,49 @@ html {
 
 }
 
+:root {
+    /* Color */
+    --white: #ffffff;
+    --alert: #CC3300;
+    --black: #131313;
+    --black-less: #505050;
+
+    --grey-darkest: #909090;
+    --grey-dark: #c8c8c8;
+    --grey-normal: #e4e4e4;
+    --grey-light: #efefef;
+    --grey-lightest: #f8f8f8;
+
+    --green: #296448;
+    --green-light: #D6E2E4;
+    /* projects */
+
+    --AMBlue: #5384ED;
+
+    --seer-purple: #6956E5;
+
+    --APPOINTA-blue: #5384ED;
+    --APPOINTA-bg: #f5f8fa;
+
+
+    ---testing-hover: #e4fff3;
+    --testing: #eff4ff;
+
+    --border-radius: 0.5em;
+    font-family: 'Lato', sans-serif;
+
+    --testing-font: #b5b5c3;
+}
+
+.testingFont {
+    color: var(--testing-font);
+    font-weight: 600;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--black);
+}
 
 .BGseer1 {
     background-image: url("project/seer/bg1.svg");
@@ -101,42 +144,7 @@ html {
 }
 
 
-:root {
-    /* Color */
-    --white: #ffffff;
-    --alert: #CC3300;
-    --black: #131313;
-    --black-less: #505050;
 
-    --grey-darkest: #909090;
-    --grey-dark: #c8c8c8;
-    --grey-normal: #e4e4e4;
-    --grey-light: #efefef;
-    --grey-lightest: #f8f8f8;
-
-    --green: #296448;
-    --green-light: #D6E2E4;
-    /* projects */
-
-    --AMBlue: #5384ED;
-
-    --seer-purple: #6956E5;
-
-    --APPOINTA-blue: #5384ED;
-    --APPOINTA-bg: #f5f8fa;
-
-
-    ---testing-hover: #e4fff3;
-    --testing: #eff4ff;
-
-    --border-radius: 0.5em;
-    font-family: 'Lato', sans-serif;
-}
-
-body {
-    font-family: 'Lato', sans-serif;
-    color: var(--black);
-}
 
 .positionAbl {
     position: absolute;
@@ -196,6 +204,21 @@ main>nav {}
 .section-nav a:focus {
     color: var(--green);
 }
+
+.APPOINTA .section-nav a:hover,
+.section-nav a:focus {
+    color: var(--APPOINTA-blue);
+}
+
+
+.SEER .section-nav a:hover,
+.section-nav a:focus{
+    color: var(--seer-purple);
+}
+
+
+
+
 
 /** Poor man's reset 
 * {
@@ -267,6 +290,7 @@ h5, h6 {
 
     text-underline-offset: 3px;
 }
+
 .textUnderline.Seer {
     text-decoration: underline;
     text-decoration-color: var(--seer-purple);
@@ -1935,14 +1959,17 @@ a.nav-link:hover {
     border-left: 5px solid var(--green);
     padding-left: 1em;
 }
+
 .leftVerLine.SEER {
     border-left: 5px solid var(--seer-purple);
     padding-left: 1em;
 }
+
 .leftVerLine.APPOINTA {
     border-left: 5px solid var(--APPOINTA-blue);
     padding-left: 1em;
 }
+
 .ver-line {
     border-left: 1px solid gray;
     height: 15.0vh;
